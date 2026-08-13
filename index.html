@@ -1,676 +1,766 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saloni Rajput | Senior WordPress & Backend API Developer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
-        
-        :root {
-            --bg-deep: #020617;
-            --accent-primary: #10b981;
-            --accent-secondary: #6366f1;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saloni Rajput — WordPress Developer | Custom Themes, WooCommerce & Performance</title>
+  <meta name="description" content="Saloni Rajput is a Senior WordPress Developer with 4+ years of experience building fast, scalable and high-performance WordPress websites. Specialising in WooCommerce, custom themes, custom plugins, ACF, REST API and Core Web Vitals.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://salonirajput30.github.io/">
 
-        * { box-sizing: border-box; }
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://salonirajput30.github.io/">
+  <meta property="og:title"       content="Saloni Rajput — WordPress Developer">
+  <meta property="og:description" content="Senior WordPress Developer with 4+ years of experience. WooCommerce, custom themes, plugins, ACF, REST API & Core Web Vitals expert.">
+  <meta property="og:site_name"   content="Saloni Rajput Portfolio">
 
-        body { 
-            font-family: 'Plus Jakarta Sans', sans-serif; 
-            background-color: var(--bg-deep); 
-            color: #f1f5f9; 
-            margin: 0;
-            overflow-x: hidden;
-        }
+  <!-- Twitter -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Saloni Rajput — WordPress Developer">
+  <meta name="twitter:description" content="Senior WordPress Developer with 4+ years of experience building fast, scalable WordPress websites.">
 
-        .glass-card { 
-            background: rgba(255, 255, 255, 0.02); 
-            border: 1px solid rgba(16, 185, 129, 0.12); 
-            backdrop-filter: blur(12px); 
-            transition: all 0.3s ease;
-        }
-        .glass-card:hover {
-            border-color: var(--accent-primary);
-            background: rgba(16, 185, 129, 0.04);
-        }
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-        .skill-tag { 
-            background: rgba(16, 185, 129, 0.1); 
-            color: #6ee7b7; 
-            border: 1px solid rgba(16, 185, 129, 0.2); 
-        }
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
 
-        .gradient-text { 
-            background: linear-gradient(135deg, #10b981 0%, #6366f1 50%, #3b82f6 100%); 
-            -webkit-background-clip: text; 
-            -webkit-text-fill-color: transparent; 
-            background-clip: text;
-        }
+  <!-- JSON-LD: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Saloni Rajput",
+    "jobTitle": "Senior WordPress Developer",
+    "email": "rsaloni223@gmail.com",
+    "url": "https://salonirajput30.github.io/",
+    "sameAs": [
+      "https://github.com/SaloniRajput30",
+      "https://www.linkedin.com/in/saloni-rajput-704a52219/"
+    ],
+    "knowsAbout": ["WordPress", "WooCommerce", "PHP", "REST API", "ACF", "Custom Plugin Development", "Custom Theme Development", "Core Web Vitals", "MySQL", "AJAX"]
+  }
+  </script>
 
-        .accent-line { 
-            height: 2px; 
-            background: linear-gradient(90deg, var(--accent-primary), transparent); 
-        }
+  <!-- JSON-LD: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Saloni Rajput Portfolio",
+    "url": "https://salonirajput30.github.io/"
+  }
+  </script>
 
-        /* Decorative code visual */
-        .code-visual {
-            position: relative;
-            border-radius: 28px;
-            overflow: hidden;
-            border: 1px solid rgba(16, 185, 129, 0.18);
-            box-shadow: 0 25px 60px -12px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(16,185,129,0.06);
-            background: rgba(5, 10, 30, 0.85);
-        }
-        .code-visual::before {
-            content: '';
-            position: absolute;
-            top: -60px; right: -60px;
-            width: 200px; height: 200px;
-            background: radial-gradient(circle, rgba(16,185,129,0.15) 0%, transparent 70%);
-            border-radius: 50%;
-        }
-        .code-visual::after {
-            content: '';
-            position: absolute;
-            bottom: -60px; left: -40px;
-            width: 160px; height: 160px;
-            background: radial-gradient(circle, rgba(99,102,241,0.15) 0%, transparent 70%);
-            border-radius: 50%;
-        }
+  <style>
+    /* ── Hero entry animations ── */
+    @keyframes hero-fade-up {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .hero-animate { animation: hero-fade-up 0.7s ease both; }
+    .hero-animate--1 { animation-delay: 0.05s; }
+    .hero-animate--2 { animation-delay: 0.15s; }
+    .hero-animate--3 { animation-delay: 0.25s; }
+    .hero-animate--4 { animation-delay: 0.38s; }
+    .hero-animate--5 { animation-delay: 0.50s; }
 
-        .code-line {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 4px 0;
-            font-family: 'Courier New', monospace;
-            font-size: 13px;
-            line-height: 1.7;
-            opacity: 0;
-            animation: fadeInLine 0.4s forwards;
-        }
-        .code-line:nth-child(1)  { animation-delay: 0.1s; }
-        .code-line:nth-child(2)  { animation-delay: 0.2s; }
-        .code-line:nth-child(3)  { animation-delay: 0.3s; }
-        .code-line:nth-child(4)  { animation-delay: 0.4s; }
-        .code-line:nth-child(5)  { animation-delay: 0.5s; }
-        .code-line:nth-child(6)  { animation-delay: 0.6s; }
-        .code-line:nth-child(7)  { animation-delay: 0.7s; }
-        .code-line:nth-child(8)  { animation-delay: 0.8s; }
-        .code-line:nth-child(9)  { animation-delay: 0.9s; }
-        .code-line:nth-child(10) { animation-delay: 1.0s; }
-        .code-line:nth-child(11) { animation-delay: 1.1s; }
-        .code-line:nth-child(12) { animation-delay: 1.2s; }
-        .code-line:nth-child(13) { animation-delay: 1.3s; }
-        .code-line:nth-child(14) { animation-delay: 1.4s; }
-        .code-line:nth-child(15) { animation-delay: 1.5s; }
-        .code-line:nth-child(16) { animation-delay: 1.6s; }
+    /* ── Tech stack grid ── */
+    .tech-stack-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
 
-        @keyframes fadeInLine {
-            from { opacity: 0; transform: translateX(-8px); }
-            to   { opacity: 1; transform: translateX(0); }
-        }
+    /* ── Featured project grid ── */
+    .featured-projects {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
 
-        .ln { color: #334155; min-width: 20px; text-align: right; font-size: 11px; user-select: none; }
-        .kw  { color: #818cf8; }
-        .fn  { color: #34d399; }
-        .str { color: #fb923c; }
-        .cm  { color: #475569; font-style: italic; }
-        .pu  { color: #94a3b8; }
-        .vr  { color: #e2e8f0; }
-        .nu  { color: #60a5fa; }
+    @media (max-width: 1024px) { .featured-projects { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 600px)  { .featured-projects { grid-template-columns: 1fr; } }
 
-        .cursor-blink {
-            display: inline-block;
-            width: 2px;
-            height: 14px;
-            background: #10b981;
-            margin-left: 2px;
-            vertical-align: middle;
-            animation: blink 1s step-end infinite;
-        }
-        @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+    /* ── Metrics section bg ── */
+    .metrics-section { background: var(--bg-subtle); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 
-        /* Floating status badges */
-        .float-badge {
-            position: absolute;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(2, 6, 23, 0.9);
-            border: 1px solid rgba(16, 185, 129, 0.25);
-            border-radius: 12px;
-            padding: 8px 14px;
-            font-size: 12px;
-            font-weight: 600;
-            backdrop-filter: blur(8px);
-            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
-            white-space: nowrap;
-        }
-        .float-badge .dot {
-            width: 7px; height: 7px;
-            border-radius: 50%;
-            background: #10b981;
-            animation: pulse-dot 2s ease-in-out infinite;
-        }
-        @keyframes pulse-dot {
-            0%,100%{opacity:1;transform:scale(1)}
-            50%{opacity:0.5;transform:scale(1.3)}
-        }
+    /* ── About preview ── */
+    .about-preview-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-12);
+      align-items: center;
+    }
+    @media (max-width: 768px) { .about-preview-grid { grid-template-columns: 1fr; } }
 
-        /* Mobile nav */
-        .mobile-menu {
-            display: none;
-            flex-direction: column;
-            position: fixed;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(2, 6, 23, 0.98);
-            z-index: 100;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-        }
-        .mobile-menu.open { display: flex; }
-        .hamburger { display: none; cursor: pointer; z-index: 200; }
+    /* ── Service grid (homepage) ── */
+    .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); }
+    @media (max-width: 1024px) { .service-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 600px)  { .service-grid { grid-template-columns: 1fr; } }
 
-        @media (max-width: 768px) {
-            .hamburger { display: flex; flex-direction: column; gap: 5px; }
-            .hamburger span { display: block; width: 24px; height: 2px; background: #f1f5f9; border-radius: 2px; transition: 0.3s; }
-            .desktop-nav { display: none !important; }
+    /* ── Code visual float badges ── */
+    .code-float-top {
+      position: absolute;
+      top: -16px;
+      right: 24px;
+      z-index: 3;
+    }
+    .code-float-bottom {
+      position: absolute;
+      bottom: -16px;
+      left: 24px;
+      z-index: 3;
+    }
 
-            .hero-title { font-size: 2.4rem !important; line-height: 1.2 !important; }
-            .hero-grid { grid-template-columns: 1fr !important; }
-            .hero-visual-col { order: -1; }
-            .hero-section { padding-top: 6rem !important; padding-bottom: 3rem !important; }
+    /* ── Hero bg decorative dots ── */
+    .hero-dots {
+      position: absolute;
+      top: 30%;
+      right: -60px;
+      width: 240px;
+      height: 240px;
+      background-image: radial-gradient(var(--border-strong) 1.5px, transparent 1.5px);
+      background-size: 20px 20px;
+      opacity: 0.5;
+      pointer-events: none;
+    }
 
-            .skills-grid { grid-template-columns: 1fr !important; }
-            .exp-header { flex-direction: column !important; align-items: flex-start !important; gap: 8px !important; }
-            .projects-grid { grid-template-columns: 1fr !important; }
-            .project-featured { padding: 1.5rem !important; border-radius: 24px !important; }
-            .project-stats { grid-template-columns: 1fr !important; gap: 0.75rem !important; }
-            .project-card { border-radius: 24px !important; padding: 1.5rem !important; }
-            .projects-title { font-size: 2.5rem !important; }
-            .contact-grid { grid-template-columns: 1fr !important; }
-            .contact-card { padding: 1.5rem !important; border-radius: 24px !important; }
-            .section-pad { padding: 3rem 1rem !important; }
-            .code-visual { display: none; }
-            .hero-visual-col { display: none; }
-        }
-
-        @media (max-width: 480px) {
-            .hero-title { font-size: 2rem !important; }
-            .projects-title { font-size: 2rem !important; }
-            .stat-badges { flex-direction: column !important; }
-            .stat-badge { width: 100%; justify-content: center; }
-        }
-
-        ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: var(--bg-deep); }
-        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 10px; }
-        ::-webkit-scrollbar-thumb:hover { background: var(--accent-primary); }
-    </style>
+    @media (max-width: 1024px) {
+      .hero-dots { display: none; }
+    }
+  </style>
 </head>
-<body class="selection:bg-emerald-500/30">
+<body>
 
-    <!-- NAV -->
-    <nav class="fixed w-full z-50 bg-black/60 backdrop-blur-md border-b border-white/5">
-        <div class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
-            <div class="text-xl md:text-2xl font-extrabold tracking-tighter italic">SALONI<span class="text-emerald-500">.Rajput</span></div>
-            
-            <div class="desktop-nav hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wide">
-                <a href="#about" class="hover:text-emerald-400 transition">ABOUT</a>
-                <a href="#skills" class="hover:text-emerald-400 transition">SKILLS</a>
-                <a href="#experience" class="hover:text-emerald-400 transition">EXPERIENCE</a>
-                <a href="#projects" class="hover:text-emerald-400 transition">PROJECTS</a>
-                <a href="#contact" class="bg-emerald-600 text-white px-5 py-2 rounded-full hover:bg-emerald-700 transition shadow-lg shadow-emerald-500/20">LET'S TALK</a>
-            </div>
+  <!-- ====================================================================
+       SITE HEADER
+       ==================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="nav-inner">
+      <a href="/" class="nav-wordmark" aria-label="Saloni Rajput — Home">
+        Saloni<span>.dev</span>
+      </a>
 
-            <button class="hamburger md:hidden" onclick="toggleMenu()" aria-label="Menu">
-                <span id="h1"></span>
-                <span id="h2"></span>
-                <span id="h3"></span>
-            </button>
-        </div>
-    </nav>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="/"            class="nav-link active">Home</a>
+        <a href="about.html"   class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobileMenu">
-        <button onclick="toggleMenu()" style="position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;color:#f1f5f9;font-size:1.5rem;cursor:pointer;">✕</button>
-        <a href="#about" onclick="toggleMenu()" class="text-2xl font-bold hover:text-emerald-400 transition">ABOUT</a>
-        <a href="#skills" onclick="toggleMenu()" class="text-2xl font-bold hover:text-emerald-400 transition">SKILLS</a>
-        <a href="#experience" onclick="toggleMenu()" class="text-2xl font-bold hover:text-emerald-400 transition">EXPERIENCE</a>
-        <a href="#projects" onclick="toggleMenu()" class="text-2xl font-bold hover:text-emerald-400 transition">PROJECTS</a>
-        <a href="#contact" onclick="toggleMenu()" class="bg-emerald-600 text-white px-8 py-3 rounded-full text-lg font-bold hover:bg-emerald-700 transition">LET'S TALK</a>
+      <div class="nav-actions">
+        <!-- GitHub -->
+        <a href="https://github.com/SaloniRajput30" class="nav-icon-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/saloni-rajput-704a52219/" class="nav-icon-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="contact.html" class="btn btn-primary btn-sm">Let's talk</a>
+      </div>
+
+      <!-- Hamburger -->
+      <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+  </header>
 
-    <!-- ABOUT -->
-    <section id="about" class="hero-section pt-28 md:pt-40 pb-12 md:pb-20 px-4 md:px-6">
-        <div class="max-w-6xl mx-auto grid hero-grid md:grid-cols-2 gap-10 md:gap-16 items-center">
-            
-            <!-- Left Column -->
+  <!-- Mobile nav -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+    <a href="/"             class="mobile-nav-link">Home</a>
+    <a href="about.html"    class="mobile-nav-link">About</a>
+    <a href="projects.html" class="mobile-nav-link">Projects</a>
+    <a href="contact.html"  class="mobile-nav-link">Contact</a>
+    <div class="mobile-nav-actions">
+      <a href="https://github.com/SaloniRajput30" class="btn btn-secondary btn-sm" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="contact.html" class="btn btn-primary btn-sm">Let's talk</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ==================================================================
+         HERO
+         ================================================================== -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-bg-glow"  aria-hidden="true"></div>
+      <div class="hero-dots"     aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Left — content -->
+          <div>
+            <div class="hero-animate hero-animate--1">
+              <div class="status-badge" style="margin-bottom: 20px;">
+                <span class="status-dot" aria-hidden="true"></span>
+                Available for new projects
+              </div>
+            </div>
+
+            <div class="hero-animate hero-animate--2">
+              <div class="hero-tag" aria-hidden="true">
+                Senior WordPress Developer &mdash; 4+ Years
+              </div>
+            </div>
+
+            <h1 class="hero-title hero-animate hero-animate--3">
+              <span class="line">Building fast,</span>
+              <span class="line">scalable <span class="accent">WordPress</span></span>
+              <span class="line">experiences.</span>
+            </h1>
+
+            <p class="hero-subtitle hero-animate hero-animate--4">
+              I craft custom WordPress solutions — from high-performance themes and plugins to complex WooCommerce builds and REST API integrations — that drive measurable business results.
+            </p>
+
+            <div class="hero-actions hero-animate hero-animate--5">
+              <a href="projects.html" class="btn btn-primary">
+                View Projects
+                <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+              </a>
+              <a href="contact.html" class="btn btn-secondary">
+                Let's Work Together
+              </a>
+            </div>
+
+            <div class="hero-social hero-animate hero-animate--5">
+              <span class="hero-social-label">Find me on</span>
+              <div class="hero-social-links">
+                <a href="https://github.com/SaloniRajput30" class="hero-social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/saloni-rajput-704a52219/" class="hero-social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                <a href="mailto:rsaloni223@gmail.com" class="hero-social-link" aria-label="Email">
+                  <svg viewBox="0 0 24 24"><path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"/><path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right — code visual -->
+          <div class="hero-code-col" aria-hidden="true">
+            <!-- Float badge top -->
+            <div class="hero-float-badge accent code-float-top">
+              <span class="status-dot"></span>
+              Available for work
+            </div>
+
+            <!-- Code window -->
+            <div class="code-window" style="width: 100%; max-width: 440px;">
+              <div class="code-titlebar">
+                <span class="code-dot code-dot-red"></span>
+                <span class="code-dot code-dot-yellow"></span>
+                <span class="code-dot code-dot-green"></span>
+                <span class="code-filename">plugin-optimiser.php</span>
+              </div>
+              <div class="code-body">
+                <div class="code-line"><span class="code-ln">1</span><span class="code-cm">// Performance-first WordPress development</span></div>
+                <div class="code-line"><span class="code-ln">2</span><span class="code-kw">class</span> <span class="code-typ">SaloniDeveloper</span> <span class="code-pu">{</span></div>
+                <div class="code-line"><span class="code-ln">3</span>&nbsp;&nbsp;<span class="code-kw">public</span> <span class="code-vr">$experience</span> <span class="code-pu">=</span> <span class="code-str">'4+ years'</span><span class="code-pu">;</span></div>
+                <div class="code-line"><span class="code-ln">4</span>&nbsp;&nbsp;<span class="code-kw">public</span> <span class="code-vr">$stack</span> <span class="code-pu">= [</span></div>
+                <div class="code-line"><span class="code-ln">5</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-str">'WordPress'</span><span class="code-pu">,</span> <span class="code-str">'WooCommerce'</span><span class="code-pu">,</span></div>
+                <div class="code-line"><span class="code-ln">6</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-str">'PHP'</span><span class="code-pu">,</span> <span class="code-str">'ACF'</span><span class="code-pu">,</span> <span class="code-str">'REST API'</span><span class="code-pu">,</span></div>
+                <div class="code-line"><span class="code-ln">7</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-str">'MySQL'</span><span class="code-pu">,</span> <span class="code-str">'Core Web Vitals'</span></div>
+                <div class="code-line"><span class="code-ln">8</span>&nbsp;&nbsp;<span class="code-pu">];</span></div>
+                <div class="code-line"><span class="code-ln">9</span>&nbsp;</div>
+                <div class="code-line"><span class="code-ln">10</span>&nbsp;&nbsp;<span class="code-kw">public function</span> <span class="code-fn">optimize</span><span class="code-pu">(</span><span class="code-vr">$site</span><span class="code-pu">) {</span></div>
+                <div class="code-line"><span class="code-ln">11</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-vr">$speed</span> <span class="code-pu">=</span> <span class="code-vr">$site</span><span class="code-pu">-&gt;</span><span class="code-fn">speed</span> <span class="code-pu">*</span> <span class="code-nu">2.4</span><span class="code-pu">;</span></div>
+                <div class="code-line"><span class="code-ln">12</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-vr">$seo</span> <span class="code-pu">=</span> <span class="code-vr">$site</span><span class="code-pu">-&gt;</span><span class="code-fn">seo</span> <span class="code-pu">+</span> <span class="code-nu">45</span><span class="code-pu">;</span></div>
+                <div class="code-line"><span class="code-ln">13</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-kw">return</span> <span class="code-fn">compact</span><span class="code-pu">(</span><span class="code-str">'speed'</span><span class="code-pu">,</span> <span class="code-str">'seo'</span><span class="code-pu">);</span></div>
+                <div class="code-line"><span class="code-ln">14</span>&nbsp;&nbsp;<span class="code-pu">}</span></div>
+                <div class="code-line"><span class="code-ln">15</span><span class="code-pu">}</span></div>
+                <div class="code-line"><span class="code-ln">16</span><span class="code-vr">$dev</span> <span class="code-pu">=</span> <span class="code-kw">new</span> <span class="code-typ">SaloniDeveloper</span><span class="code-pu">();</span><span class="code-cursor"></span></div>
+              </div>
+            </div>
+
+            <!-- Float badge bottom -->
+            <div class="hero-float-badge code-float-bottom">
+              <svg style="width:14px;height:14px;fill:var(--accent);flex-shrink:0;" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              Core Web Vitals Expert
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         METRICS
+         ================================================================== -->
+    <section class="metrics-section section-sm" aria-label="Key metrics">
+      <div class="container">
+        <div class="metrics-grid stagger">
+          <div class="metric-card reveal">
+            <span class="metric-value" data-counter data-target="4" data-suffix="+" aria-label="4+ years experience">0</span>
+            <span class="metric-label">Years Experience</span>
+          </div>
+          <div class="metric-card reveal">
+            <span class="metric-value" data-counter data-target="2.4" data-suffix="×" data-decimals="1" aria-label="2.4 times page speed improvement">0</span>
+            <span class="metric-label">Page Speed Improvement</span>
+          </div>
+          <div class="metric-card reveal">
+            <span class="metric-value" data-counter data-target="45" data-suffix="%" aria-label="45% SEO uplift">0</span>
+            <span class="metric-label">SEO Score Uplift</span>
+          </div>
+          <div class="metric-card reveal">
+            <span class="metric-value" data-counter data-target="27" data-suffix="%" aria-label="27% user engagement boost">0</span>
+            <span class="metric-label">User Engagement Boost</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         ABOUT PREVIEW
+         ================================================================== -->
+    <section class="section" aria-labelledby="about-preview-heading">
+      <div class="container">
+        <div class="about-preview-grid">
+          <div class="reveal-left">
+            <div class="section-label" aria-hidden="true">About me</div>
+            <h2 class="section-heading" id="about-preview-heading">
+              A developer who cares about the details that matter.
+            </h2>
+            <p style="color: var(--text-secondary); line-height: 1.75; margin-bottom: 24px;">
+              I'm a Senior WordPress Developer with over four years of professional experience building production-grade websites for international clients. My work spans custom theme and plugin development, WooCommerce builds, REST API integrations, and deep performance engineering.
+            </p>
+            <p style="color: var(--text-secondary); line-height: 1.75; margin-bottom: 32px;">
+              Across roles at <strong style="color: var(--text-primary); font-weight: 600;">Narola Infotech</strong>, <strong style="color: var(--text-primary); font-weight: 600;">Triospire</strong>, and <strong style="color: var(--text-primary); font-weight: 600;">Tecocraft</strong>, I've delivered measurable improvements in speed, SEO, and user engagement — consistently prioritising clean, maintainable code over quick fixes.
+            </p>
+            <a href="about.html" class="btn btn-ghost">
+              Read my story
+              <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+            </a>
+          </div>
+
+          <div class="reveal-right" style="display: flex; flex-direction: column; gap: 12px;">
+            <div class="card card-sm" style="border-left: 3px solid var(--accent);">
+              <div style="font-size: 0.78rem; font-weight: 600; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px;">Current Role</div>
+              <div style="font-size: 1rem; font-weight: 700; color: var(--text-primary);">Open to Opportunities</div>
+              <div style="font-size: 0.875rem; color: var(--text-secondary); margin-top: 2px;">WordPress &amp; WooCommerce Development</div>
+            </div>
+            <div class="card card-sm">
+              <div style="font-size: 0.78rem; font-weight: 600; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px;">Education</div>
+              <div style="font-size: 0.9375rem; font-weight: 600; color: var(--text-primary);">MCA — Gujarat Technological University</div>
+              <div style="font-size: 0.825rem; color: var(--text-tertiary); margin-top: 2px;">CGPA: 7.86 &middot; 2020</div>
+            </div>
+            <div class="card card-sm">
+              <div style="font-size: 0.78rem; font-weight: 600; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px;">Expertise</div>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                <span class="badge badge-accent">WordPress</span>
+                <span class="badge badge-accent">WooCommerce</span>
+                <span class="badge badge-accent">Core Web Vitals</span>
+                <span class="badge badge-surface">PHP</span>
+                <span class="badge badge-surface">REST API</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         CORE EXPERTISE
+         ================================================================== -->
+    <section class="section" style="background: var(--bg-subtle); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);" aria-labelledby="expertise-heading">
+      <div class="container">
+        <div class="reveal" style="text-align: center; margin-bottom: 56px;">
+          <div class="section-label" style="justify-content: center;" aria-hidden="true">Expertise</div>
+          <h2 class="section-heading" id="expertise-heading" style="margin-left: auto; margin-right: auto;">Core skill areas</h2>
+          <p class="section-subheading" style="margin: 0 auto;">Everything needed to design, build, and maintain high-performance WordPress websites.</p>
+        </div>
+
+        <div class="service-grid stagger">
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 3c1.954 0 3.741.716 5.122 1.894L5.894 17.122A7.962 7.962 0 0 1 4 12c0-4.411 3.589-8 8-8zm0 14a7.968 7.968 0 0 1-5.122-1.894L18.106 6.878A7.962 7.962 0 0 1 20 12c0 4.411-3.589 8-8 8z"/></svg>
+            </div>
+            <div class="service-title">WordPress Development</div>
+            <p class="service-desc">Custom themes, child themes, plugin development, CPTs, ACF Pro, Elementor, Divi, Gutenberg — production-ready builds.</p>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm0 10h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1zm3 2H5v2h2v-2zm0-10H5v2h2V6z"/></svg>
+            </div>
+            <div class="service-title">WooCommerce</div>
+            <p class="service-desc">Custom checkout flows, dynamic product layouts, payment gateway integration, cart modifications and conversion optimisation.</p>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <div class="service-title">Performance & Core Web Vitals</div>
+            <p class="service-desc">Deep technical audits, caching, database optimisation, render-blocking asset elimination, and measurable Lighthouse score improvements.</p>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-3 3h2v2h-2V7zm-4 0h2v2h-2V7zM4 19V7h11v2H9v2h6v2H9v2h8.938L18 19H4z"/></svg>
+            </div>
+            <div class="service-title">REST API & Custom Endpoints</div>
+            <p class="service-desc">WordPress REST API development, custom endpoint creation, third-party API integrations, and AJAX-powered dynamic functionality.</p>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M20 6h-2.18c.07-.44.18-.86.18-1.3C18 2.1 15.9 0 13.3 0c-1.5 0-2.7.72-3.56 1.83L12 4.34 14.26 1.8C14.72 1.3 15.2 1 15.7 1c1.4 0 2.5 1.12 2.5 2.5 0 .78-.37 1.47-.9 1.93L14 9h6v11H4V9h6L7.2 6.43c-.53-.46-.9-1.15-.9-1.93C6.3 3.12 7.4 2 8.8 2c.5 0 .98.3 1.44.8L12 4.34 14.26 1.8C13.4.72 12.2 0 10.7 0 8.1 0 6 2.1 6 4.7c0 .44.11.86.18 1.3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"/></svg>
+            </div>
+            <div class="service-title">HTML to WordPress Migration</div>
+            <p class="service-desc">Converting static HTML websites into fully managed, dynamic WordPress platforms with structured content architecture and SEO preservation.</p>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="m21.406 6.086-9-4a1 1 0 0 0-.812 0l-9 4c-.556.24-.584 1.044-.084 1.32L12 12.869l9.49-5.463c.5-.276.472-1.08-.084-1.32zM12 14.87 2.51 9.406C2.012 9.13 1.5 9.5 1.5 10.067v7.866a1 1 0 0 0 .553.894l9 4.5a1 1 0 0 0 .894 0l9-4.5a1 1 0 0 0 .553-.894v-7.866c0-.567-.512-.937-1.01-.661L12 14.87z"/></svg>
+            </div>
+            <div class="service-title">Technical SEO & Security</div>
+            <p class="service-desc">On-page SEO, structured data, schema markup, website hardening, security audits, malware prevention and maintenance protocols.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         FEATURED PROJECTS
+         ================================================================== -->
+    <section class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="reveal" style="display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 48px; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <div class="section-label" aria-hidden="true">Work</div>
+            <h2 class="section-heading" id="projects-heading" style="margin-bottom: 0;">Featured projects</h2>
+          </div>
+          <a href="projects.html" class="btn btn-ghost">
+            View all projects
+            <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+          </a>
+        </div>
+
+        <!-- Featured: Tecocraft -->
+        <div class="project-featured reveal" style="margin-bottom: 24px;">
+          <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 20px;">
             <div>
-                <div class="inline-block px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-bold mb-4 tracking-widest uppercase">Senior WordPress Developer</div>
-                <h1 class="hero-title text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">Building Better, <span class="gradient-text">Faster</span> Websites</h1>
-
-                <div class="space-y-4 md:space-y-6 text-slate-400 text-base md:text-lg leading-relaxed">
-                    <p>
-                        I am a <span class="text-white font-semibold">Senior WordPress Developer</span> with 4+ years of professional experience. I adopt a <span class="text-emerald-400 font-bold">Clean Code First</span> philosophy—ensuring every theme or plugin is measurably fast, secure, and maintainable.
-                    </p>
-                    <p class="text-sm md:text-base text-slate-500 italic border-l-2 border-emerald-500/30 pl-4 md:pl-6">
-                        "Proficient in Elementor, Divi, WooCommerce customization, and ACF—adept at transforming static designs into high-performance solutions."
-                    </p>
-                    <p>
-                        Across roles at <span class="text-white">Narola Infotech</span>, <span class="text-white">Triospire</span>, and <span class="text-white">Tecocraft</span>, I've delivered results including a <span class="text-emerald-400 font-bold">2.4× speed improvement</span>.
-                    </p>
-                </div>
-
-                <!-- Stats Badges -->
-                <div class="stat-badges flex flex-wrap gap-3 mt-6 md:mt-8">
-                    <div class="stat-badge flex items-center gap-2 text-xs md:text-sm border border-white/10 px-3 md:px-4 py-2 rounded-lg bg-white/5">
-                        <i class="fas fa-rocket text-emerald-400"></i> 2.4× Speed Boost
-                    </div>
-                    <div class="stat-badge flex items-center gap-2 text-xs md:text-sm border border-white/10 px-3 md:px-4 py-2 rounded-lg bg-white/5">
-                        <i class="fas fa-chart-line text-indigo-400"></i> 45% SEO Uplift
-                    </div>
-                    <div class="stat-badge flex items-center gap-2 text-xs md:text-sm border border-white/10 px-3 md:px-4 py-2 rounded-lg bg-white/5">
-                        <i class="fas fa-clock text-indigo-400"></i> 4+ Years Experience
-                    </div>
-                </div>
-
-                <!-- Education -->
-                <div class="mt-8 md:mt-12">
-                    <h2 class="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6 flex items-center gap-2">
-                        <i class="fas fa-graduation-cap text-emerald-400"></i> Education
-                    </h2>
-                    <div class="space-y-3 md:space-y-4">
-                        <div class="flex items-start gap-3 md:gap-4 border border-white/10 rounded-xl bg-white/5 px-4 md:px-5 py-3 md:py-4">
-                            <div class="mt-1 w-9 h-9 md:w-10 md:h-10 rounded-full bg-emerald-500/10 flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-university text-emerald-400 text-xs md:text-sm"></i>
-                            </div>
-                            <div>
-                                <div class="text-white font-semibold text-sm md:text-base">Master of Computer Application (MCA)</div>
-                                <div class="text-slate-400 text-xs md:text-sm mt-0.5">Gujarat Technological University</div>
-                                <div class="flex flex-wrap gap-2 md:gap-3 mt-2">
-                                    <span class="text-xs bg-emerald-500/10 text-emerald-400 px-2 md:px-3 py-1 rounded-full font-medium">CGPA: 7.86</span>
-                                    <span class="text-xs bg-white/5 text-slate-400 px-2 md:px-3 py-1 rounded-full">2020</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-3 md:gap-4 border border-white/10 rounded-xl bg-white/5 px-4 md:px-5 py-3 md:py-4">
-                            <div class="mt-1 w-9 h-9 md:w-10 md:h-10 rounded-full bg-indigo-500/10 flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-university text-indigo-400 text-xs md:text-sm"></i>
-                            </div>
-                            <div>
-                                <div class="text-white font-semibold text-sm md:text-base">Bachelor of Computer Application (BCA)</div>
-                                <div class="text-slate-400 text-xs md:text-sm mt-0.5">Veer Narmad South Gujarat University</div>
-                                <div class="flex flex-wrap gap-2 md:gap-3 mt-2">
-                                    <span class="text-xs bg-indigo-500/10 text-indigo-400 px-2 md:px-3 py-1 rounded-full font-medium">CGPA: 67.68%</span>
-                                    <span class="text-xs bg-white/5 text-slate-400 px-2 md:px-3 py-1 rounded-full">2017</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <span class="badge badge-accent" style="margin-bottom: 12px;">Featured Case Study</span>
+              <h3 style="font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; color: var(--text-primary); margin-bottom: 8px;">Performance &amp; SEO Engineering — Tecocraft</h3>
+              <p style="color: var(--text-secondary); font-size: 0.9375rem; line-height: 1.7; max-width: 620px;">Deep technical audit and full refactor of legacy WordPress builds. Eliminated bloated plugins, resolved unindexed database queries, removed render-blocking assets and implemented caching layers — resulting in measurable Core Web Vitals improvements and organic search gains.</p>
             </div>
+            <a href="projects/tecocraft-performance.html" class="btn btn-secondary" style="flex-shrink: 0;">
+              View Case Study
+              <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+            </a>
+          </div>
 
-            <!-- Right Column — Animated Code Visual -->
-            <div class="hero-visual-col flex justify-center md:justify-end mt-6 md:mt-0">
-                <div class="relative w-full max-w-[420px]">
-
-                    <!-- Floating badges -->
-                    <div class="float-badge" style="top: -18px; right: 10px; z-index:10;">
-                        <div class="dot"></div>
-                        <span class="text-emerald-400">Available for work</span>
-                    </div>
-                    <div class="float-badge" style="bottom: -18px; left: 10px; z-index:10; border-color: rgba(99,102,241,0.3);">
-                        <i class="fas fa-bolt text-indigo-400 text-xs"></i>
-                        <span class="text-slate-300">Core Web Vitals Expert</span>
-                    </div>
-
-                    <!-- Code card -->
-                    <div class="code-visual p-0 mt-6 mb-6" style="min-height: 320px;">
-                        <!-- Window chrome -->
-                        <div class="flex items-center gap-2 px-5 py-3 border-b border-white/5" style="background: rgba(255,255,255,0.02);">
-                            <span style="width:10px;height:10px;border-radius:50%;background:#ef4444;display:inline-block;"></span>
-                            <span style="width:10px;height:10px;border-radius:50%;background:#f59e0b;display:inline-block;"></span>
-                            <span style="width:10px;height:10px;border-radius:50%;background:#10b981;display:inline-block;"></span>
-                            <span class="ml-3 text-slate-500 text-xs font-mono">plugin-optimiser.php</span>
-                        </div>
-                        <!-- Code body -->
-                        <div class="p-5 relative z-10 overflow-hidden">
-                            <div class="code-line"><span class="ln">1</span><span class="cm">// Performance-first WordPress Dev</span></div>
-                            <div class="code-line"><span class="ln">2</span><span class="kw">class</span> <span class="fn">SaloniDeveloper</span> <span class="pu">{</span></div>
-                            <div class="code-line"><span class="ln">3</span>&nbsp;&nbsp;<span class="kw">public</span> <span class="vr">$experience</span> <span class="pu">=</span> <span class="str">"4+ years"</span><span class="pu">;</span></div>
-                            <div class="code-line"><span class="ln">4</span>&nbsp;&nbsp;<span class="kw">public</span> <span class="vr">$stack</span> <span class="pu">=</span> <span class="pu">[</span></div>
-                            <div class="code-line"><span class="ln">5</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"WordPress"</span><span class="pu">,</span> <span class="str">"PHP 8.x"</span><span class="pu">,</span></div>
-                            <div class="code-line"><span class="ln">6</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"WooCommerce"</span><span class="pu">,</span> <span class="str">"ACF"</span><span class="pu">,</span></div>
-                            <div class="code-line"><span class="ln">7</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"REST API"</span><span class="pu">,</span> <span class="str">"MySQL"</span></div>
-                            <div class="code-line"><span class="ln">8</span>&nbsp;&nbsp;<span class="pu">];</span></div>
-                            <div class="code-line"><span class="ln">9</span>&nbsp;</div>
-                            <div class="code-line"><span class="ln">10</span>&nbsp;&nbsp;<span class="kw">public function</span> <span class="fn">optimize</span><span class="pu">(</span><span class="vr">$site</span><span class="pu">) {</span></div>
-                            <div class="code-line"><span class="ln">11</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="vr">$speed</span> <span class="pu">=</span> <span class="vr">$site</span><span class="pu">-></span><span class="fn">speed</span> <span class="pu">*</span> <span class="nu">2.4</span><span class="pu">;</span></div>
-                            <div class="code-line"><span class="ln">12</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="vr">$seo</span> <span class="pu">=</span> <span class="vr">$site</span><span class="pu">-></span><span class="fn">seo</span> <span class="pu">+</span> <span class="nu">45</span><span class="pu">;</span></div>
-                            <div class="code-line"><span class="ln">13</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">return</span> <span class="fn">compact</span><span class="pu">(</span><span class="str">'speed'</span><span class="pu">,</span><span class="str">'seo'</span><span class="pu">);</span></div>
-                            <div class="code-line"><span class="ln">14</span>&nbsp;&nbsp;<span class="pu">}</span></div>
-                            <div class="code-line"><span class="ln">15</span><span class="pu">}</span></div>
-                            <div class="code-line"><span class="ln">16</span><span class="vr">$dev</span> <span class="pu">=</span> <span class="kw">new</span> <span class="fn">SaloniDeveloper</span><span class="pu">();</span><span class="cursor-blink"></span></div>
-                        </div>
-                    </div>
-                </div>
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px;" class="results-grid">
+            <div style="background: var(--accent-lighter); border: 1px solid var(--accent-border); border-radius: 12px; padding: 20px; text-align: center;">
+              <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent); letter-spacing: -0.04em; line-height: 1;">2.4×</div>
+              <div style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-top: 4px;">Page Speed</div>
             </div>
+            <div style="background: var(--accent2-light); border: 1px solid rgba(59,76,184,0.2); border-radius: 12px; padding: 20px; text-align: center;">
+              <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent2); letter-spacing: -0.04em; line-height: 1;">45%</div>
+              <div style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent2); margin-top: 4px;">SEO Uplift</div>
+            </div>
+            <div style="background: #FFF7ED; border: 1px solid #FED7AA; border-radius: 12px; padding: 20px; text-align: center;">
+              <div style="font-size: 2.5rem; font-weight: 800; color: #C2410C; letter-spacing: -0.04em; line-height: 1;">27%</div>
+              <div style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #C2410C; margin-top: 4px;">Engagement Boost</div>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+            <span class="tech-badge">PHP</span>
+            <span class="tech-badge">ACF</span>
+            <span class="tech-badge">Core Web Vitals</span>
+            <span class="tech-badge">Caching</span>
+            <span class="tech-badge">Technical SEO</span>
+            <span class="tech-badge">MySQL</span>
+          </div>
         </div>
+
+        <!-- Other featured projects -->
+        <div class="featured-projects stagger">
+
+          <div class="project-card reveal" data-category="woocommerce,wordpress">
+            <div class="project-card-visual">
+              <div class="project-card-visual-inner" style="background: linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 100%);">
+                <svg style="width: 48px; height: 48px; fill: var(--accent); opacity: 0.4;" viewBox="0 0 24 24"><path d="M4 4h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm0 10h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1zm3 2H5v2h2v-2zm0-10H5v2h2V6z"/></svg>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-card-category">WooCommerce · Narola Infotech</div>
+              <h3 class="project-card-title">Ikozy WooCommerce</h3>
+              <p class="project-card-desc">Full e-commerce platform with a custom WooCommerce checkout flow, dynamic product layouts, and Elementor Pro integration — optimised for conversion and performance.</p>
+              <div class="project-card-tags">
+                <span class="tech-badge">WooCommerce</span>
+                <span class="tech-badge">Elementor Pro</span>
+                <span class="tech-badge">Custom PHP</span>
+              </div>
+              <div class="project-card-footer">
+                <span class="project-card-company">Narola Infotech</span>
+                <a href="projects/ikozy-woocommerce.html" class="project-card-link">
+                  Case Study
+                  <svg style="width:14px;height:14px;fill:currentColor;" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card reveal" data-category="wordpress,migration">
+            <div class="project-card-visual">
+              <div class="project-card-visual-inner" style="background: linear-gradient(135deg, #EEF2FF 0%, #E0E7FF 100%);">
+                <svg style="width: 48px; height: 48px; fill: var(--accent2); opacity: 0.4;" viewBox="0 0 24 24"><path d="M20 6h-2.18c.07-.44.18-.86.18-1.3C18 2.1 15.9 0 13.3 0c-1.5 0-2.7.72-3.56 1.83L12 4.34 14.26 1.8C14.72 1.3 15.2 1 15.7 1c1.4 0 2.5 1.12 2.5 2.5 0 .78-.37 1.47-.9 1.93L14 9h6v11H4V9h6L7.2 6.43c-.53-.46-.9-1.15-.9-1.93C6.3 3.12 7.4 2 8.8 2c.5 0 .98.3 1.44.8L12 4.34 14.26 1.8C13.4.72 12.2 0 10.7 0 8.1 0 6 2.1 6 4.7c0 .44.11.86.18 1.3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"/></svg>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-card-category">Migration · Triospire</div>
+              <h3 class="project-card-title">Repair Blogs</h3>
+              <p class="project-card-desc">Converted a static HTML site into a fully managed WordPress platform with Custom Post Types for structured product content and on-page SEO architecture.</p>
+              <div class="project-card-tags">
+                <span class="tech-badge">WordPress</span>
+                <span class="tech-badge">CPT</span>
+                <span class="tech-badge">Technical SEO</span>
+              </div>
+              <div class="project-card-footer">
+                <span class="project-card-company">Triospire</span>
+                <a href="projects/repair-blogs.html" class="project-card-link">
+                  Case Study
+                  <svg style="width:14px;height:14px;fill:currentColor;" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card reveal" data-category="wordpress">
+            <div class="project-card-visual">
+              <div class="project-card-visual-inner" style="background: linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 100%);">
+                <svg style="width: 48px; height: 48px; fill: #0369A1; opacity: 0.4;" viewBox="0 0 24 24"><path d="M19 3H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zm-7 3c1.648 0 3 1.352 3 3s-1.352 3-3 3-3-1.352-3-3 1.352-3 3-3zm4 12H8v-.75C8 15.11 9.795 14 12 14s4 1.11 4 3.25V18z"/></svg>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-card-category">Corporate · Narola Infotech</div>
+              <h3 class="project-card-title">Holger — Corporate</h3>
+              <p class="project-card-desc">Pixel-perfect corporate website built with Elementor Pro — precise responsive layout, optimised assets and production-ready delivery to demanding design specifications.</p>
+              <div class="project-card-tags">
+                <span class="tech-badge">Elementor Pro</span>
+                <span class="tech-badge">WordPress</span>
+                <span class="tech-badge">Responsive</span>
+              </div>
+              <div class="project-card-footer">
+                <span class="project-card-company">Narola Infotech</span>
+                <a href="projects/holger.html" class="project-card-link">
+                  Case Study
+                  <svg style="width:14px;height:14px;fill:currentColor;" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section-pad py-16 md:py-20 px-4 md:px-6 bg-white/[0.01]">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-3xl font-bold mb-2">Technical Arsenal</h2>
-            <div class="accent-line w-20 mb-8 md:mb-12"></div>
-            
-            <div class="skills-grid grid md:grid-cols-3 gap-6 md:gap-10">
-                <div class="glass-card p-6 md:p-8 rounded-3xl">
-                    <h3 class="text-emerald-400 font-bold mb-4 md:mb-6 flex items-center gap-2 text-sm md:text-base"><i class="fas fa-code"></i> Languages & Backend</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag px-3 py-1 rounded-md text-xs">PHP 8.x</span>
-                        <span class="skill-tag px-3 py-1 rounded-md text-xs">MySQL</span>
-                        <span class="skill-tag px-3 py-1 rounded-md text-xs">JavaScript</span>
-                        <span class="skill-tag px-3 py-1 rounded-md text-xs">jQuery</span>
-                        <span class="skill-tag px-3 py-1 rounded-md text-xs">REST API</span>
-                        <span class="skill-tag px-3 py-1 rounded-md text-xs">Ajax</span>
-                        <span class="skill-tag px-3 py-1 rounded-md text-xs">HTML</span>
-                        <span class="skill-tag px-3 py-1 rounded-md text-xs">CSS</span>
-                    </div>
-                </div>
-                <div class="glass-card p-6 md:p-8 rounded-3xl">
-                    <h3 class="text-emerald-400 font-bold mb-4 md:mb-6 flex items-center gap-2 text-sm md:text-base"><i class="fab fa-wordpress"></i> CMS & Tools</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag px-3 py-1 rounded-md text-xs">WordPress</span>
-                        <span class="skill-tag px-3 py-1 rounded-md text-xs">WooCommerce</span>
-                        <span class="skill-tag px-3 py-1 rounded-md text-xs">ACF & ACF Pro</span>
-                        <span class="skill-tag px-3 py-1 rounded-md text-xs">Bedrock</span>
-                        <span class="skill-tag px-3 py-1 rounded-md text-xs">Custom Post Types</span>
-                        <span class="skill-tag px-3 py-1 rounded-md text-xs">Git & GitHub</span>
-                    </div>
-                </div>
-                <div class="glass-card p-6 md:p-8 rounded-3xl">
-                    <h3 class="text-emerald-400 font-bold mb-4 md:mb-6 flex items-center gap-2 text-sm md:text-base"><i class="fas fa-bullseye"></i> Specializations</h3>
-                    <ul class="text-sm text-slate-400 space-y-3">
-                        <li><i class="fas fa-check text-emerald-500 mr-2"></i> Custom Plugin & Theme Development</li>
-                        <li><i class="fas fa-check text-emerald-500 mr-2"></i> Theme Integration</li>
-                        <li><i class="fas fa-check text-emerald-500 mr-2"></i> API Development</li>
-                        <li><i class="fas fa-check text-emerald-500 mr-2"></i> Core Web Vitals</li>
-                    </ul>
-                </div>
-            </div>
+    <!-- ==================================================================
+         CAREER TIMELINE PREVIEW
+         ================================================================== -->
+    <section class="section" style="background: var(--bg-subtle); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);" aria-labelledby="experience-heading">
+      <div class="container">
+        <div class="reveal" style="margin-bottom: 48px;">
+          <div class="section-label" aria-hidden="true">Experience</div>
+          <h2 class="section-heading" id="experience-heading">Career timeline</h2>
         </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-role">Software Engineer <span class="timeline-company">@ Narola Infotech</span></div>
+              </div>
+              <div class="timeline-period">Jan 2025 – Nov 2025</div>
+            </div>
+            <p class="timeline-desc">Developed and maintained dynamic WordPress websites using Elementor and Elementor Pro, ensuring pixel-perfect, production-ready results. Customised WooCommerce layouts to enhance UX and conversions. Built and maintained custom themes and plugins, optimised for speed, SEO, and responsiveness.</p>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-role">Senior WordPress Developer <span class="timeline-company">@ Triospire</span></div>
+              </div>
+              <div class="timeline-period">May 2023 – July 2024</div>
+            </div>
+            <p class="timeline-desc">Led end-to-end development of diverse client websites using Elementor, Divi Builder, and Bedrock Theme. Transformed HTML sites into responsive WordPress platforms, developed custom plugins, themes, and CPTs, and managed website uptime, SEO, and performance optimisation.</p>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-role">Backend &amp; Performance Specialist <span class="timeline-company">@ Tecocraft</span></div>
+              </div>
+              <div class="timeline-period">Feb 2021 – Feb 2023</div>
+            </div>
+            <p class="timeline-desc">Developed custom WordPress themes and plugins using ACF and custom templates. Achieved a 2.4× page speed improvement, 45% SEO score uplift, and 27% user engagement boost through targeted technical audits and refactoring. Converted multiple HTML sites to responsive WordPress builds.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section-pad py-16 md:py-20 px-4 md:px-6">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-2xl md:text-3xl font-bold mb-2">Experience</h2>
-            <div class="accent-line w-20 mb-8 md:mb-12"></div>
-
-            <div class="space-y-8 md:space-y-12">
-                <div class="group relative pl-6 md:pl-8 border-l-2 border-white/10 hover:border-emerald-500 transition-colors">
-                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-black border-2 border-emerald-500 rounded-full group-hover:bg-emerald-500 transition-all"></div>
-                    <div class="exp-header flex flex-col md:flex-row md:justify-between md:items-center mb-3 md:mb-4 gap-2">
-                        <h3 class="text-lg md:text-xl font-bold text-white">Software Engineer <span class="text-emerald-400">@ Narola Infotech</span></h3>
-                        <span class="text-xs font-mono bg-white/5 px-3 py-1 rounded-full text-slate-400 uppercase w-fit">Jan 2025 – Nov 2025</span>
-                    </div>
-                    <p class="text-slate-400 text-sm leading-relaxed">Developed and maintained dynamic WordPress websites using Elementor and Elementor Pro, ensuring production-ready, pixel-perfect results. Customized WooCommerce layouts (product, cart, checkout) to enhance UX and conversions. Built and maintained custom themes and plugins, optimized for speed, SEO, and responsiveness.</p>
-                </div>
-
-                <div class="group relative pl-6 md:pl-8 border-l-2 border-white/10 hover:border-emerald-500 transition-colors">
-                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-black border-2 border-emerald-500 rounded-full group-hover:bg-emerald-500 transition-all"></div>
-                    <div class="exp-header flex flex-col md:flex-row md:justify-between md:items-center mb-3 md:mb-4 gap-2">
-                        <h3 class="text-lg md:text-xl font-bold text-white">Senior WordPress Developer <span class="text-emerald-400">@ Triospire</span></h3>
-                        <span class="text-xs font-mono bg-white/5 px-3 py-1 rounded-full text-slate-400 uppercase w-fit">May 2023 – July 2024</span>
-                    </div>
-                    <p class="text-slate-400 text-sm leading-relaxed">Led end-to-end development of diverse client websites using Elementor, Divi Builder, and Bedrock Theme. Transformed HTML sites into responsive WordPress platforms, developed custom plugins, themes, and CPTs, and managed website uptime, SEO, and performance optimization.</p>
-                </div>
-
-                <div class="group relative pl-6 md:pl-8 border-l-2 border-white/10 hover:border-emerald-500 transition-colors">
-                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-black border-2 border-emerald-500 rounded-full group-hover:bg-emerald-500 transition-all"></div>
-                    <div class="exp-header flex flex-col md:flex-row md:justify-between md:items-center mb-3 md:mb-4 gap-2">
-                        <h3 class="text-lg md:text-xl font-bold text-white">Backend & Performance Specialist <span class="text-emerald-400">@ Tecocraft</span></h3>
-                        <span class="text-xs font-mono bg-white/5 px-3 py-1 rounded-full text-slate-400 uppercase w-fit">Feb 2021 – Feb 2023</span>
-                    </div>
-                    <p class="text-slate-400 text-sm leading-relaxed">Developed custom WordPress themes and plugins using ACF and custom templates. Improved page load speed by 2.4×, increased SEO performance by 45%, and boosted user engagement by 27%. Converted multiple HTML sites to responsive WordPress builds and managed the full CMS lifecycle.</p>
-                </div>
-            </div>
+    <!-- ==================================================================
+         TECHNOLOGY STACK
+         ================================================================== -->
+    <section class="section" aria-labelledby="stack-heading">
+      <div class="container">
+        <div class="reveal" style="text-align: center; margin-bottom: 48px;">
+          <div class="section-label" style="justify-content: center;" aria-hidden="true">Tech Stack</div>
+          <h2 class="section-heading" id="stack-heading" style="margin-left: auto; margin-right: auto;">Tools &amp; technologies</h2>
         </div>
+
+        <div style="display: flex; flex-direction: column; gap: 32px;" class="stagger">
+          <div class="reveal">
+            <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-tertiary); margin-bottom: 12px;">WordPress Ecosystem</div>
+            <div class="tech-stack-grid">
+              <span class="tech-badge">WordPress</span>
+              <span class="tech-badge">WooCommerce</span>
+              <span class="tech-badge">ACF / ACF Pro</span>
+              <span class="tech-badge">Elementor Pro</span>
+              <span class="tech-badge">Divi Builder</span>
+              <span class="tech-badge">Gutenberg</span>
+              <span class="tech-badge">Custom Post Types</span>
+              <span class="tech-badge">Bedrock</span>
+            </div>
+          </div>
+          <div style="height: 1px; background: var(--border);" aria-hidden="true"></div>
+          <div class="reveal">
+            <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-tertiary); margin-bottom: 12px;">Backend &amp; Database</div>
+            <div class="tech-stack-grid">
+              <span class="tech-badge">PHP</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">REST API</span>
+              <span class="tech-badge">AJAX</span>
+              <span class="tech-badge">Custom Plugins</span>
+              <span class="tech-badge">Custom Themes</span>
+            </div>
+          </div>
+          <div style="height: 1px; background: var(--border);" aria-hidden="true"></div>
+          <div class="reveal">
+            <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-tertiary); margin-bottom: 12px;">Frontend</div>
+            <div class="tech-stack-grid">
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">jQuery</span>
+            </div>
+          </div>
+          <div style="height: 1px; background: var(--border);" aria-hidden="true"></div>
+          <div class="reveal">
+            <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-tertiary); margin-bottom: 12px;">Performance &amp; Quality</div>
+            <div class="tech-stack-grid">
+              <span class="tech-badge">Core Web Vitals</span>
+              <span class="tech-badge">Technical SEO</span>
+              <span class="tech-badge">Website Security</span>
+              <span class="tech-badge">Git / GitHub</span>
+              <span class="tech-badge">Site Migration</span>
+              <span class="tech-badge">Maintenance</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="py-16 md:py-24 px-4 md:px-6 bg-[#050508] relative overflow-hidden">
-        <div class="absolute top-0 right-0 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-emerald-600/5 rounded-full blur-[120px] pointer-events-none"></div>
-        <div class="absolute bottom-0 left-0 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-indigo-600/5 rounded-full blur-[120px] pointer-events-none"></div>
-
-        <div class="max-w-7xl mx-auto relative z-10">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 md:mb-16 gap-4 md:gap-6">
-                <div class="max-w-2xl">
-                    <div class="flex items-center gap-3 mb-4">
-                        <span class="h-[1px] w-12 bg-gradient-to-r from-emerald-500 to-transparent"></span>
-                        <span class="text-xs font-bold tracking-[0.4em] text-emerald-400 uppercase">Work</span>
-                    </div>
-                    <h2 class="projects-title text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tighter text-white leading-none">
-                        Selected <span class="gradient-text">Projects</span>
-                    </h2>
-                </div>
-            </div>
-
-            <div class="projects-grid grid grid-cols-1 md:grid-cols-6 gap-4 md:gap-6">
-                
-                <!-- Featured -->
-                <div class="project-featured md:col-span-6 glass-card p-6 md:p-10 rounded-[24px] md:rounded-[40px] border-white/5 relative group overflow-hidden mb-2 md:mb-4">
-                    <div class="absolute top-0 right-0 p-4 md:p-8 opacity-10 group-hover:opacity-20 transition-opacity">
-                        <i class="fas fa-microchip text-6xl md:text-8xl text-emerald-500"></i>
-                    </div>
-                    <div class="relative z-10">
-                        <span class="bg-emerald-500/10 text-emerald-400 text-[10px] font-black px-3 py-1 rounded-full border border-emerald-500/20 uppercase tracking-widest">Featured Case Study</span>
-                        <h3 class="text-xl md:text-3xl font-bold mt-4 md:mt-6 mb-3 md:mb-4">Performance & SEO Engineering — Tecocraft</h3>
-                        <p class="text-slate-400 leading-relaxed mb-6 md:mb-10 max-w-3xl text-sm md:text-base">
-                            Conducted deep technical audits and full refactors of legacy WordPress builds. Addressed bloated plugins, unindexed database queries, render-blocking assets, and missing caching layers across multiple client sites. Resulted in measurable gains on Core Web Vitals and organic search visibility.
-                        </p>
-                        <div class="project-stats grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4 mb-6 md:mb-8">
-                            <div class="p-4 md:p-6 rounded-2xl md:rounded-3xl bg-white/[0.02] border border-white/5 hover:border-emerald-500/30 transition-all">
-                                <div class="text-3xl md:text-4xl font-black text-emerald-400 mb-1 tracking-tighter">2.4×</div>
-                                <div class="text-[10px] text-slate-500 uppercase font-bold tracking-widest">Page Speed Increase</div>
-                            </div>
-                            <div class="p-4 md:p-6 rounded-2xl md:rounded-3xl bg-white/[0.02] border border-white/5 hover:border-indigo-500/30 transition-all">
-                                <div class="text-3xl md:text-4xl font-black text-indigo-400 mb-1 tracking-tighter">45%</div>
-                                <div class="text-[10px] text-slate-500 uppercase font-bold tracking-widest">SEO Score Uplift</div>
-                            </div>
-                            <div class="p-4 md:p-6 rounded-2xl md:rounded-3xl bg-white/[0.02] border border-white/5 hover:border-blue-500/30 transition-all">
-                                <div class="text-3xl md:text-4xl font-black text-blue-400 mb-1 tracking-tighter">27%</div>
-                                <div class="text-[10px] text-slate-500 uppercase font-bold tracking-widest">User Engagement Boost</div>
-                            </div>
-                        </div>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="skill-tag px-3 py-1 rounded-lg text-[10px] font-bold uppercase">PHP</span>
-                            <span class="skill-tag px-3 py-1 rounded-lg text-[10px] font-bold uppercase">ACF</span>
-                            <span class="skill-tag px-3 py-1 rounded-lg text-[10px] font-bold uppercase">Core Web Vitals</span>
-                            <span class="skill-tag px-3 py-1 rounded-lg text-[10px] font-bold uppercase">Caching</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card md:col-span-3 glass-card p-6 md:p-8 rounded-[24px] md:rounded-[40px] border-white/5 group hover:border-emerald-500/30">
-                    <div class="mb-8 md:mb-12">
-                        <div class="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-4 md:mb-6">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div>
-                        <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3">Ikozy WooCommerce</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed">Full e-commerce platform built at Narola Infotech. Custom WooCommerce checkout flow, dynamic product layouts, and full site performance optimization for improved conversion rates.</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag px-3 py-1 rounded-lg text-[10px] font-bold uppercase">WooCommerce</span>
-                        <span class="skill-tag px-3 py-1 rounded-lg text-[10px] font-bold uppercase">Elementor Pro</span>
-                        <span class="skill-tag px-3 py-1 rounded-lg text-[10px] font-bold uppercase">Custom PHP</span>
-                    </div>
-                </div>
-
-                <div class="project-card md:col-span-3 glass-card p-6 md:p-8 rounded-[24px] md:rounded-[40px] border-white/5 group hover:border-blue-500/30">
-                    <div class="mb-8 md:mb-12">
-                        <div class="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center text-blue-400 mb-4 md:mb-6">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3">Holger — Corporate</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed">Pixel-perfect corporate website developed at Narola using Elementor Pro. Precise responsive layout, performance-optimized assets, and production-ready delivery.</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag px-3 py-1 rounded-lg text-[10px] font-bold uppercase">Elementor Pro</span>
-                        <span class="skill-tag px-3 py-1 rounded-lg text-[10px] font-bold uppercase">WordPress</span>
-                        <span class="skill-tag px-3 py-1 rounded-lg text-[10px] font-bold uppercase">Responsive</span>
-                    </div>
-                </div>
-
-                <div class="project-card md:col-span-2 glass-card p-6 md:p-8 rounded-[24px] md:rounded-[40px] border-white/5 group hover:border-indigo-500/30">
-                    <div class="mb-8 md:mb-12">
-                        <div class="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-4 md:mb-6">
-                            <i class="fas fa-tools"></i>
-                        </div>
-                        <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3">Repair Blogs</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed">Converted a static HTML site to a dynamic WordPress platform at Triospire, featuring CPT-based product sections and structured content architecture.</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag px-3 py-1 rounded-lg text-[10px] font-bold uppercase">WordPress</span>
-                        <span class="skill-tag px-3 py-1 rounded-lg text-[10px] font-bold uppercase">CPT</span>
-                        <span class="skill-tag px-3 py-1 rounded-lg text-[10px] font-bold uppercase">SEO</span>
-                    </div>
-                </div>
-
-                <div class="project-card md:col-span-2 glass-card p-6 md:p-8 rounded-[24px] md:rounded-[40px] border-white/5 group hover:border-green-500/30">
-                    <div class="mb-8 md:mb-12">
-                        <div class="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-green-500/10 flex items-center justify-center text-green-400 mb-4 md:mb-6">
-                            <i class="fas fa-store"></i>
-                        </div>
-                        <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3">Comestey</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed">Developed a WooCommerce store at Triospire using Gutenberg blocks for dynamic product layouts, custom styling, and scalable product management.</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag px-3 py-1 rounded-lg text-[10px] font-bold uppercase">Gutenberg</span>
-                        <span class="skill-tag px-3 py-1 rounded-lg text-[10px] font-bold uppercase">WooCommerce</span>
-                        <span class="skill-tag px-3 py-1 rounded-lg text-[10px] font-bold uppercase">PHP</span>
-                    </div>
-                </div>
-
-                <div class="project-card md:col-span-2 glass-card p-6 md:p-8 rounded-[24px] md:rounded-[40px] border-white/5 group hover:border-emerald-500/30">
-                    <div class="mb-8 md:mb-12">
-                        <div class="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-4 md:mb-6">
-                            <i class="fas fa-solar-panel"></i>
-                        </div>
-                        <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3">SmartSolar</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed">Rebuilt a static HTML website into a full WordPress platform at Triospire with CPTs, product management modules, and responsive layout for an energy sector client.</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag px-3 py-1 rounded-lg text-[10px] font-bold uppercase">CPT</span>
-                        <span class="skill-tag px-3 py-1 rounded-lg text-[10px] font-bold uppercase">Divi</span>
-                        <span class="skill-tag px-3 py-1 rounded-lg text-[10px] font-bold uppercase">WordPress</span>
-                    </div>
-                </div>
-
-                <div class="project-card md:col-span-2 glass-card p-6 md:p-8 rounded-[24px] md:rounded-[40px] border-white/5 group hover:border-indigo-500/30">
-                    <div class="mb-8 md:mb-12">
-                        <div class="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-4 md:mb-6">
-                            <i class="fas fa-layer-group"></i>
-                        </div>
-                        <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3">SLED — MTheory</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed">Built with Elementor at Triospire, focusing on smooth UX transitions, responsive UI, and accessible design for a professional services website.</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag px-3 py-1 rounded-lg text-[10px] font-bold uppercase">Elementor</span>
-                        <span class="skill-tag px-3 py-1 rounded-lg text-[10px] font-bold uppercase">UX/UI</span>
-                    </div>
-                </div>
-
-                <div class="project-card md:col-span-2 glass-card p-6 md:p-8 rounded-[24px] md:rounded-[40px] border-white/5 group hover:border-teal-500/30">
-                    <div class="mb-8 md:mb-12">
-                        <div class="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-teal-500/10 flex items-center justify-center text-teal-400 mb-4 md:mb-6">
-                            <i class="fas fa-lungs"></i>
-                        </div>
-                        <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3">BreathingCenter</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed">Migrated a static HTML health & wellness site to WordPress at Tecocraft, implementing structured CPTs for better content management and SEO optimization.</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag px-3 py-1 rounded-lg text-[10px] font-bold uppercase">ACF</span>
-                        <span class="skill-tag px-3 py-1 rounded-lg text-[10px] font-bold uppercase">Migration</span>
-                        <span class="skill-tag px-3 py-1 rounded-lg text-[10px] font-bold uppercase">SEO</span>
-                    </div>
-                </div>
-
-                <div class="project-card md:col-span-2 glass-card p-6 md:p-8 rounded-[24px] md:rounded-[40px] border-white/5 group hover:border-blue-500/30">
-                    <div class="mb-8 md:mb-12">
-                        <div class="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center text-blue-400 mb-4 md:mb-6">
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-                        <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3">Gemini Business</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed">Business portfolio site built at Narola featuring Elementor animations, improved SEO ranking, and a polished, professional visual identity.</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag px-3 py-1 rounded-lg text-[10px] font-bold uppercase">Animations</span>
-                        <span class="skill-tag px-3 py-1 rounded-lg text-[10px] font-bold uppercase">Branding</span>
-                    </div>
-                </div>
-
-            </div>
+    <!-- ==================================================================
+         CTA
+         ================================================================== -->
+    <section class="section" aria-label="Call to action">
+      <div class="container">
+        <div class="cta-section reveal">
+          <h2 class="cta-title">Ready to build something great?</h2>
+          <p class="cta-subtitle">Whether you need a high-performance WordPress build, a WooCommerce store, or technical rescue work — let's talk about what I can do for your project.</p>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn-cta-primary btn-primary">
+              Get in Touch
+              <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+            </a>
+            <a href="projects.html" class="btn btn-cta-secondary">View All Projects</a>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="py-16 md:py-24 px-4 md:px-6">
-        <div class="max-w-4xl mx-auto contact-card glass-card p-6 md:p-10 rounded-[24px] md:rounded-[40px] border-emerald-500/20">
-            <div class="contact-grid grid md:grid-cols-2 gap-8 md:gap-12">
-                <div>
-                    <h2 class="text-2xl md:text-3xl font-bold mb-4 md:mb-6">Let's connect</h2>
-                    <p class="text-slate-400 mb-6 md:mb-8 text-sm md:text-base">Ready to optimize your next project? Reach out via email or GitHub.</p>
-                    
-                    <div class="space-y-4 md:space-y-6">
-                        <a href="mailto:rsaloni223@gmail.com" class="flex items-center gap-3 md:gap-4 text-emerald-400 hover:text-indigo-400 transition text-sm md:text-base">
-                            <div class="w-9 h-9 md:w-10 md:h-10 rounded-full bg-emerald-500/10 flex items-center justify-center flex-shrink-0"><i class="fas fa-envelope text-sm"></i></div>
-                            rsaloni223@gmail.com
-                        </a>
-                        <a href="https://github.com/SaloniRajput30" class="flex items-center gap-3 md:gap-4 text-emerald-400 hover:text-indigo-400 transition text-sm md:text-base">
-                            <div class="w-9 h-9 md:w-10 md:h-10 rounded-full bg-emerald-500/10 flex items-center justify-center flex-shrink-0"><i class="fab fa-github text-sm"></i></div>
-                            @SaloniRajput30
-                        </a>
-                        <a href="https://www.linkedin.com/in/saloni-rajput-704a52219/" class="flex items-center gap-3 md:gap-4 text-emerald-400 hover:text-indigo-400 transition text-sm md:text-base">
-                            <div class="w-9 h-9 md:w-10 md:h-10 rounded-full bg-emerald-500/10 flex items-center justify-center flex-shrink-0"><i class="fab fa-linkedin-in text-sm"></i></div>
-                            Saloni Rajput
-                        </a>
-                    </div>
-                </div>
-                <form action="https://formspree.io/f/rsaloni223@gmail.com" method="POST" class="space-y-3 md:space-y-4">
-                    <input type="text" name="name" placeholder="Name" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 md:px-5 py-3 md:py-4 outline-none focus:border-emerald-500 transition text-white text-sm md:text-base">
-                    <input type="email" name="email" placeholder="Email" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 md:px-5 py-3 md:py-4 outline-none focus:border-emerald-500 transition text-white text-sm md:text-base">
-                    <textarea name="message" rows="4" placeholder="Project Details" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 md:px-5 py-3 md:py-4 outline-none focus:border-emerald-500 transition text-white text-sm md:text-base"></textarea>
-                    <button type="submit" class="w-full bg-emerald-600 text-white font-bold py-3 md:py-4 rounded-xl hover:bg-emerald-700 transition shadow-lg shadow-emerald-500/20 uppercase tracking-widest text-xs md:text-sm">Send Message</button>
-                </form>
-            </div>
+  </main>
+
+  <!-- ====================================================================
+       SITE FOOTER
+       ==================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-brand-name">Saloni<span>.dev</span></div>
+          <p class="footer-tagline">Senior WordPress Developer building fast, scalable and maintainable web experiences.</p>
+          <div class="footer-social-links">
+            <a href="https://github.com/SaloniRajput30" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/saloni-rajput-704a52219/" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="mailto:rsaloni223@gmail.com" class="footer-social-link" aria-label="Email">
+              <svg viewBox="0 0 24 24"><path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"/><path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"/></svg>
+            </a>
+          </div>
         </div>
-    </section>
 
-    <footer class="py-8 md:py-10 text-center text-slate-600 text-xs tracking-widest uppercase border-t border-white/5">
-        © 2026 Saloni Rajput · Surat, India
-    </footer>
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <div class="footer-links">
+            <a href="/"             class="footer-link">Home</a>
+            <a href="about.html"    class="footer-link">About</a>
+            <a href="projects.html" class="footer-link">Projects</a>
+            <a href="contact.html"  class="footer-link">Contact</a>
+          </div>
+        </div>
 
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('open');
-        }
-        document.querySelectorAll('a[href^="#"]').forEach(a => {
-            a.addEventListener('click', e => {
-                const target = document.querySelector(a.getAttribute('href'));
-                if (target) {
-                    e.preventDefault();
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-    </script>
+        <div>
+          <div class="footer-col-title">Projects</div>
+          <div class="footer-links">
+            <a href="projects/tecocraft-performance.html" class="footer-link">Tecocraft Performance</a>
+            <a href="projects/ikozy-woocommerce.html"     class="footer-link">Ikozy WooCommerce</a>
+            <a href="projects/holger.html"                class="footer-link">Holger Corporate</a>
+            <a href="projects/comestey.html"              class="footer-link">Comestey</a>
+            <a href="projects/smartsolar.html"            class="footer-link">SmartSolar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; <span data-year>2026</span> <span>Saloni Rajput</span>. All rights reserved.</p>
+        <p class="footer-copy">rsaloni223@gmail.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <style>
+    @media (max-width: 768px) {
+      .results-grid { grid-template-columns: 1fr !important; }
+    }
+  </style>
 </body>
 </html>
