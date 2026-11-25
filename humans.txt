@@ -1,0 +1,11 @@
+/* TEAM */
+Developer: Saloni S. Rajput
+Role: Senior WordPress Developer
+Location: Surat, Gujarat, India
+Email: Rsaloni223@gmail.com
+GitHub: https://github.com/SaloniRajput30
+LinkedIn: https://www.linkedin.com/in/saloni-rajput-704a52219
+
+/* SITE */
+Standards: HTML5, CSS3, ES5/ES6, Schema.org JSON-LD, WCAG AA
+Last update: 2026-11-25

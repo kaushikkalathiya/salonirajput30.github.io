@@ -1,111 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tecocraft Performance Engineering — Saloni Rajput | WordPress Developer</title>
-  <meta name="description" content="Case study: How Saloni Rajput achieved a 2.4× page speed improvement, 45% SEO uplift and 27% user engagement boost through performance engineering at Tecocraft.">
+  <title>Tecocraft Performance &amp; SEO Audit | Saloni S. Rajput</title>
+  <meta name="description" content="Case study on auditing and refactoring legacy WordPress sites at Tecocraft for speed, query efficiency, caching and technical SEO.">
   <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#2563eb">
   <link rel="canonical" href="https://salonirajput30.github.io/projects/tecocraft-performance.html">
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
 
-  <meta property="og:type"        content="article">
-  <meta property="og:url"         content="https://salonirajput30.github.io/projects/tecocraft-performance.html">
-  <meta property="og:title"       content="Tecocraft Performance Engineering — Case Study">
-  <meta property="og:description" content="2.4× page speed, 45% SEO uplift, 27% engagement boost. Deep technical audit and WordPress performance engineering.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://salonirajput30.github.io/projects/tecocraft-performance.html">
+  <meta property="og:title" content="Tecocraft Performance &amp; SEO Audit | Saloni S. Rajput">
+  <meta property="og:description" content="Technical audit and refactor of legacy WordPress sites at Tecocraft Infusion Pvt. Ltd.">
+  <meta property="og:image" content="https://salonirajput30.github.io/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tecocraft Performance &amp; SEO Audit | Saloni S. Rajput">
+  <meta name="twitter:description" content="Technical audit and refactor of legacy WordPress sites at Tecocraft.">
+  <meta name="twitter:image" content="https://salonirajput30.github.io/assets/og-image.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="../assets/css/components.css">
-  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <script>(function(){try{var t=localStorage.getItem('saloni-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type":"ListItem","position":1,"name":"Home","item":"https://salonirajput30.github.io/"},
-      {"@type":"ListItem","position":2,"name":"Projects","item":"https://salonirajput30.github.io/projects.html"},
-      {"@type":"ListItem","position":3,"name":"Tecocraft Performance Engineering"}
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://salonirajput30.github.io/" },
+          { "@type": "ListItem", "position": 2, "name": "Projects", "item": "https://salonirajput30.github.io/projects.html" },
+          { "@type": "ListItem", "position": 3, "name": "Tecocraft Performance Audit", "item": "https://salonirajput30.github.io/projects/tecocraft-performance.html" }
+        ]
+      },
+      {
+        "@type": "CreativeWork",
+        "@id": "https://salonirajput30.github.io/projects/tecocraft-performance.html#work",
+        "name": "Tecocraft Performance and SEO Audit",
+        "url": "https://salonirajput30.github.io/projects/tecocraft-performance.html",
+        "author": { "@id": "https://salonirajput30.github.io/#person" },
+        "keywords": ["PHP", "MySQL", "ACF", "Transients API", "Core Web Vitals", "Schema Markup"]
+      }
     ]
   }
   </script>
-
-  <style>
-    .case-content { max-width: 780px; margin: 0 auto; }
-    .case-content p { line-height: 1.8; color: var(--text-secondary); margin-bottom: 16px; }
-    .case-content h3 { font-size: 1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 8px; margin-top: 24px; }
-    .results-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 32px 0; }
-    @media (max-width: 600px) { .results-row { grid-template-columns: 1fr; } }
-    .case-nav { display: flex; align-items: center; justify-content: space-between; padding-top: 48px; margin-top: 48px; border-top: 1px solid var(--border); flex-wrap: wrap; gap: 16px; }
-  </style>
 </head>
 <body>
-
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <header class="site-header" role="banner">
     <div class="nav-inner">
-      <a href="../" class="nav-wordmark" aria-label="Saloni Rajput — Home">Saloni<span>.dev</span></a>
+      <a href="../index.html" class="nav-wordmark">Saloni<span>.dev</span></a>
       <nav class="nav-links" aria-label="Main navigation">
-        <a href="../"              class="nav-link">Home</a>
-        <a href="../about.html"    class="nav-link">About</a>
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../about.html" class="nav-link">About</a>
         <a href="../projects.html" class="nav-link active">Projects</a>
-        <a href="../contact.html"  class="nav-link">Contact</a>
+        <a href="../contact.html" class="nav-link">Contact</a>
       </nav>
       <div class="nav-actions">
-        <a href="https://github.com/SaloniRajput30" class="nav-icon-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
-        <a href="../contact.html" class="btn btn-primary btn-sm">Let's talk</a>
+        <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" aria-label="Switch to dark mode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg></button>
+        <a href="../contact.html" class="btn btn-primary btn-sm nav-cta-desktop">Contact me</a>
+        <button type="button" class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
       </div>
-      <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
     </div>
   </header>
-
-  <div class="mobile-nav" id="mobile-nav" aria-hidden="true" role="dialog">
-    <a href="../"              class="mobile-nav-link">Home</a>
-    <a href="../about.html"    class="mobile-nav-link">About</a>
-    <a href="../projects.html" class="mobile-nav-link">Projects</a>
-    <a href="../contact.html"  class="mobile-nav-link">Contact</a>
-    <div class="mobile-nav-actions">
-      <a href="../contact.html" class="btn btn-primary btn-sm">Let's talk</a>
-    </div>
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+    <a href="../index.html" class="mobile-nav-link">Home</a><a href="../about.html" class="mobile-nav-link">About</a><a href="../projects.html" class="mobile-nav-link">Projects</a><a href="../contact.html" class="mobile-nav-link">Contact</a>
   </div>
 
-  <main>
+  <main id="main-content">
     <section class="case-hero" aria-labelledby="case-title">
       <div class="container">
         <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="../" class="breadcrumb-item">Home</a>
-          <span class="breadcrumb-sep" aria-hidden="true">/</span>
-          <a href="../projects.html" class="breadcrumb-item">Projects</a>
-          <span class="breadcrumb-sep" aria-hidden="true">/</span>
-          <span class="breadcrumb-current">Tecocraft Performance</span>
+          <a href="../index.html" class="breadcrumb-item">Home</a><span aria-hidden="true">/</span>
+          <a href="../projects.html" class="breadcrumb-item">Projects</a><span aria-hidden="true">/</span>
+          <span class="breadcrumb-current">Tecocraft Performance Audit</span>
         </nav>
-
-        <div class="case-hero-label">
-          <span class="badge badge-accent">Featured Case Study</span>
-        </div>
-
-        <h1 class="case-hero-title" id="case-title">Performance &amp; SEO Engineering — Tecocraft</h1>
-        <p class="case-hero-summary">Deep technical audit and full refactor of legacy WordPress builds — eliminating bloated plugins, unindexed database queries, render-blocking assets and missing caching layers — resulting in measurable, verified performance gains.</p>
-
+        <span class="badge badge-accent" style="margin-bottom: var(--space-3);">Performance &amp; SEO · Tecocraft</span>
+        <h1 class="case-hero-title" id="case-title">Tecocraft Performance and SEO Audit</h1>
+        <p class="case-hero-summary">Technical audit and refactor of older client WordPress sites to resolve slow database queries, heavy plugin footprints, missing caching and technical SEO gaps.</p>
         <div class="case-meta">
-          <div class="case-meta-item">
-            <div class="case-meta-label">Company</div>
-            <div class="case-meta-value">Tecocraft</div>
-          </div>
-          <div class="case-meta-item">
-            <div class="case-meta-label">Role</div>
-            <div class="case-meta-value">Backend &amp; Performance Specialist</div>
-          </div>
-          <div class="case-meta-item">
-            <div class="case-meta-label">Period</div>
-            <div class="case-meta-value">Feb 2021 – Feb 2023</div>
-          </div>
-          <div class="case-meta-item">
-            <div class="case-meta-label">Category</div>
-            <div class="case-meta-value">Performance Engineering · Technical SEO</div>
-          </div>
+          <div><div class="case-meta-label">Company</div><div class="case-meta-value">Tecocraft Infusion Pvt. Ltd.</div></div>
+          <div><div class="case-meta-label">Role</div><div class="case-meta-value">WordPress Developer (CMS)</div></div>
+          <div><div class="case-meta-label">Period</div><div class="case-meta-value">Feb 2021 to Feb 2023</div></div>
+          <div><div class="case-meta-label">Focus</div><div class="case-meta-value">Speed, Caching &amp; Technical SEO</div></div>
         </div>
       </div>
     </section>
@@ -113,94 +100,38 @@
     <section class="section">
       <div class="container">
         <div class="case-content">
+          <article class="case-block glass-panel">
+            <h2 class="case-section-title">Problem</h2>
+            <p>Older client WordPress sites inherited at Tecocraft Infusion Pvt. Ltd. suffered from heavy plugin usage, unoptimised database queries, synchronous scripts, uncompressed images, no page or object caching, and incomplete meta tags and structured data.</p>
+          </article>
 
-          <!-- Results -->
-          <div class="results-row">
-            <div class="case-result-card">
-              <div class="case-result-value">2.4×</div>
-              <div class="case-result-label">Page Speed Improvement</div>
-            </div>
-            <div class="case-result-card">
-              <div class="case-result-value">45%</div>
-              <div class="case-result-label">SEO Score Uplift</div>
-            </div>
-            <div class="case-result-card">
-              <div class="case-result-value">27%</div>
-              <div class="case-result-label">User Engagement Boost</div>
-            </div>
-          </div>
+          <article class="case-block glass-panel">
+            <h2 class="case-section-title">Approach</h2>
+            <p>I audited each site before making changes so every fix targeted a measured bottleneck.</p>
+            <h3>Plugin review and conditional loading</h3>
+            <p>Replaced redundant single-purpose plugins with lean custom PHP where appropriate and restricted plugin assets to load only on templates that required them.</p>
+            <h3>Database queries and caching</h3>
+            <p>Identified slow queries, added Transients API caching for expensive lookups, and configured page and object caching layers.</p>
+            <h3>Front-end assets and technical SEO</h3>
+            <p>Deferred non-critical scripts, optimised images, and corrected meta tags and structured data markup across templates.</p>
+          </article>
 
-          <!-- Overview -->
-          <div style="margin-bottom: 40px;" class="reveal">
-            <div class="case-section-title">Overview</div>
-            <p>During my time at Tecocraft as a Backend &amp; Performance Specialist, I worked across multiple client WordPress websites that had accumulated significant technical debt. Sites were slow, poorly structured and failing on Core Web Vitals measurements — problems that were directly impacting both organic search rankings and user retention.</p>
-            <p>The project involved conducting systematic technical audits across these legacy builds and implementing targeted fixes to address the root causes of poor performance and SEO scores.</p>
-          </div>
-
-          <!-- Challenge -->
-          <div style="margin-bottom: 40px;" class="reveal">
-            <div class="case-section-title">Challenge</div>
-            <p>The WordPress installations inherited at Tecocraft had several common issues that had compounded over time:</p>
-            <ul style="display: flex; flex-direction: column; gap: 10px; margin: 16px 0 16px 20px;">
-              <li style="color: var(--text-secondary); line-height: 1.7;"><strong style="color: var(--text-primary);">Plugin bloat:</strong> Dozens of poorly maintained plugins causing redundant JavaScript and CSS loading on every page.</li>
-              <li style="color: var(--text-secondary); line-height: 1.7;"><strong style="color: var(--text-primary);">Unindexed database queries:</strong> Slow, unoptimised MySQL queries running on high-traffic pages with no caching layer.</li>
-              <li style="color: var(--text-secondary); line-height: 1.7;"><strong style="color: var(--text-primary);">Render-blocking resources:</strong> CSS and JavaScript loaded synchronously in the document head, blocking first contentful paint.</li>
-              <li style="color: var(--text-secondary); line-height: 1.7;"><strong style="color: var(--text-primary);">Missing caching strategy:</strong> No page caching, no object caching, no browser cache headers configured.</li>
-              <li style="color: var(--text-secondary); line-height: 1.7;"><strong style="color: var(--text-primary);">Unoptimised assets:</strong> Large uncompressed images, no lazy loading, and no CDN in use.</li>
-              <li style="color: var(--text-secondary); line-height: 1.7;"><strong style="color: var(--text-primary);">Poor technical SEO:</strong> Missing or duplicate meta tags, unstructured content, no schema markup, crawl inefficiencies.</li>
-            </ul>
-          </div>
-
-          <!-- Solution -->
-          <div style="margin-bottom: 40px;" class="reveal">
-            <div class="case-section-title">Solution &amp; Implementation</div>
-            <p>I approached each site methodically — beginning with a full technical audit before making any changes. This ensured that every action was targeted at a verified problem rather than making speculative improvements.</p>
-
-            <h3>Plugin audit and elimination</h3>
-            <p>Conducted a full plugin review, replacing multiple single-purpose plugins with leaner custom PHP code where appropriate. Removed all plugins that were loading resources on pages where they weren't used, using conditional loading to restrict plugin assets to only the templates that required them.</p>
-
-            <h3>Database optimisation</h3>
-            <p>Identified slow queries through MySQL slow query logging and WordPress query monitoring. Added appropriate database indexes, refactored expensive post meta queries, and implemented WordPress Transients API to cache the results of heavy queries.</p>
-
-            <h3>Asset delivery optimisation</h3>
-            <p>Moved non-critical JavaScript to the footer. Implemented deferred and async loading where appropriate. Converted above-the-fold CSS to inline critical CSS to eliminate render-blocking stylesheets. Compressed and served images in next-generation formats with explicit width and height attributes to eliminate CLS.</p>
-
-            <h3>Caching strategy</h3>
-            <p>Implemented a layered caching strategy including full-page caching, object caching, and browser cache headers. Configured appropriate cache expiry for static assets and set up cache invalidation rules for dynamic content types.</p>
-
-            <h3>Technical SEO improvements</h3>
-            <p>Audited and corrected all meta tag issues, resolved duplicate content problems, implemented structured data markup, optimised internal linking structure, fixed crawl errors and improved overall page structure for both search engines and users.</p>
-          </div>
-
-          <!-- Tech stack -->
-          <div style="margin-bottom: 40px;" class="reveal">
-            <div class="case-section-title">Technologies</div>
+          <article class="case-block glass-panel">
+            <h2 class="case-section-title">Technologies</h2>
             <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-              <span class="tech-badge">PHP</span>
-              <span class="tech-badge">MySQL</span>
-              <span class="tech-badge">WordPress</span>
-              <span class="tech-badge">ACF</span>
-              <span class="tech-badge">Core Web Vitals</span>
-              <span class="tech-badge">Caching</span>
-              <span class="tech-badge">Technical SEO</span>
-              <span class="tech-badge">Schema Markup</span>
-              <span class="tech-badge">JavaScript</span>
-              <span class="tech-badge">CSS Optimisation</span>
+              <span class="tech-badge">WordPress</span><span class="tech-badge">PHP</span><span class="tech-badge">MySQL</span><span class="tech-badge">ACF</span><span class="tech-badge">Transients API</span><span class="tech-badge">Page &amp; Object Caching</span><span class="tech-badge">Schema Markup</span>
             </div>
-          </div>
+          </article>
 
-          <!-- Next project -->
+          <article class="case-block glass-panel">
+            <h2 class="case-section-title">Outcome</h2>
+            <p>Across the audited Tecocraft sites, the combined speed, caching and technical SEO work delivered a 2.4 times improvement in page speed, a 45 percent increase in SEO score and a 27 percent increase in user engagement.</p>
+          </article>
+
           <div class="case-nav">
-            <a href="../projects.html" class="btn btn-secondary">← All Projects</a>
-            <div class="next-project" style="border: none; padding: 0; margin: 0;">
-              <div class="next-project-label">Next project</div>
-              <a href="ikozy-woocommerce.html" class="next-project-link">
-                Ikozy WooCommerce
-                <svg style="width:20px;height:20px;fill:currentColor;" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
-              </a>
-            </div>
+            <a href="../projects.html" class="btn btn-secondary">All Projects</a>
+            <a href="ikozy-woocommerce.html" class="btn btn-primary">Next: Ikozy WooCommerce</a>
           </div>
-
         </div>
       </div>
     </section>
@@ -208,44 +139,12 @@
 
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <div class="footer-inner">
-        <div>
-          <div class="footer-brand-name">Saloni<span>.dev</span></div>
-          <p class="footer-tagline">Senior WordPress Developer building fast, scalable and maintainable web experiences.</p>
-          <div class="footer-social-links">
-            <a href="https://github.com/SaloniRajput30" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
-            <a href="https://www.linkedin.com/in/saloni-rajput-704a52219/" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-            <a href="mailto:rsaloni223@gmail.com" class="footer-social-link" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"/><path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"/></svg></a>
-          </div>
-        </div>
-        <div>
-          <div class="footer-col-title">Navigation</div>
-          <div class="footer-links">
-            <a href="../"              class="footer-link">Home</a>
-            <a href="../about.html"    class="footer-link">About</a>
-            <a href="../projects.html" class="footer-link">Projects</a>
-            <a href="../contact.html"  class="footer-link">Contact</a>
-          </div>
-        </div>
-        <div>
-          <div class="footer-col-title">Other Projects</div>
-          <div class="footer-links">
-            <a href="ikozy-woocommerce.html"  class="footer-link">Ikozy WooCommerce</a>
-            <a href="holger.html"             class="footer-link">Holger Corporate</a>
-            <a href="comestey.html"           class="footer-link">Comestey</a>
-            <a href="smartsolar.html"         class="footer-link">SmartSolar</a>
-            <a href="breathingcenter.html"    class="footer-link">BreathingCenter</a>
-          </div>
-        </div>
-      </div>
       <div class="footer-bottom">
-        <p class="footer-copy">&copy; <span data-year>2026</span> <span>Saloni Rajput</span>. All rights reserved.</p>
+        <p>&copy; <span data-year>2026</span> Saloni S. Rajput. All rights reserved.</p>
+        <p><a href="mailto:Rsaloni223@gmail.com">Rsaloni223@gmail.com</a></p>
       </div>
     </div>
   </footer>
-
-  <script src="../assets/js/navigation.js"></script>
-  <script src="../assets/js/animations.js"></script>
-  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/app.js" defer></script>
 </body>
 </html>

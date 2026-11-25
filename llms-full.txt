@@ -1,0 +1,79 @@
+SALONI S. RAJPUT
+Senior WordPress Developer
+Location: Surat, Gujarat, India
+Phone: +91 70487 31433
+Email: Rsaloni223@gmail.com
+Portfolio: https://salonirajput30.github.io/
+LinkedIn: https://www.linkedin.com/in/saloni-rajput-704a52219
+GitHub: https://github.com/SaloniRajput30
+Resume PDF: https://salonirajput30.github.io/assets/saloni-rajput-wordpress-developer-resume.pdf
+
+PROFESSIONAL SUMMARY
+WordPress and WooCommerce developer with over four years of professional experience building custom themes, plugins and ecommerce sites for client projects. Comfortable working with ACF and custom post types, moving static HTML sites onto WordPress, customising WooCommerce templates and checkout, and auditing older sites for speed and technical SEO.
+
+Has taken projects from design references and static HTML through to maintainable WordPress builds, using custom code in place of extra plugins where it reduces page weight. Follows WordPress security practices such as nonces, data sanitisation and capability checks, and builds with Core Web Vitals and on-page SEO in mind from the start.
+
+Most recently built REST API based business applications with authentication and validation for use by frontend teams and third party systems. Works independently, leads modules and communicates directly with clients. Holds seven WordPress VIP Learn certificates covering performance, security, debugging, the REST API and the block editor.
+
+TECHNICAL SKILLS
+- CMS and Platforms: WordPress, WooCommerce, Bedrock, OpenCart
+- Programming Languages: PHP, JavaScript, SQL
+- Frontend Development: HTML5, CSS3, jQuery, AJAX, Bootstrap, responsive design
+- WordPress Development: Custom themes and plugins, custom post types, ACF, hooks and filters, WordPress REST API, Gutenberg blocks, Elementor Pro, Divi Builder, HTML to WordPress migration, headless WordPress data layers
+- Ecommerce: WooCommerce template overrides, checkout customisation with hooks and filters, payment gateway integration, product layouts, product filtering
+- Database: MySQL, MariaDB, query optimisation, Transients API
+- SEO, Performance and Security: Core Web Vitals, page and object caching, asset optimisation, technical and on-page SEO, schema markup, nonces, data sanitisation, capability checks
+- Development Tools: Git, GitHub, WAMP
+
+PROFESSIONAL EXPERIENCE
+
+1. Senior WordPress Developer, WebbyGenius Infotech Pvt. Ltd. (Dec 2025 to Feb 2026)
+- Worked on backend systems and API development for internal and client applications.
+- Built REST APIs for a day to day account management system that handles users, roles, permissions and financial records.
+- Developed a payslip maker API covering salary slip generation, management and delivery.
+- Added authentication and input validation to the endpoints so frontend teams and third party tools could integrate without problems.
+
+2. Software Engineer, Narola Infotech Pvt. Ltd. (Jan 2025 to Nov 2025)
+- Developed and maintained WordPress and WooCommerce websites for client projects, working from design references supplied by the design team.
+- Built the Ikozy WooCommerce store with custom template overrides for product listing, product, cart and checkout pages, and a customised one page checkout using WooCommerce hooks and filters.
+- Delivered the Holger corporate website in Elementor Pro to a detailed responsive design specification.
+- Built Big Gazga in Divi Builder and the Gemini business website in Elementor with animations and SEO improvements.
+- Optimised WooCommerce script loading and product image loading to keep Core Web Vitals acceptable on the store.
+
+3. Senior WordPress Developer (CMS), Triospire Web Solution Pvt. Ltd. (May 2023 to Jul 2024)
+- Led development of client websites using Elementor, Divi Builder and Bedrock, and looked after uptime, SEO and performance across several client accounts.
+- Converted static HTML sites to WordPress for Repair Blogs, ThaiMassage and SmartSolar, using ACF and custom post types for product and content management, plus custom redirection logic for Repair Blogs.
+- Built Comestey, a WooCommerce store that uses Gutenberg blocks for dynamic product layouts.
+- Built the SLED site for MTheory Group in Elementor with responsive layouts and smooth page transitions.
+- Developed custom plugins and themes for client requirements.
+
+4. WordPress Developer (CMS), Tecocraft Infusion Pvt. Ltd. (Feb 2021 to Feb 2023)
+- Developed custom WordPress themes and plugins using ACF and custom post types, and migrated static HTML sites to responsive WordPress builds, including BreathingCenter and Farming.
+- Carried out technical audits of older client sites covering plugin review and conditional asset loading, slow database queries and Transients API caching, deferred scripts, image optimisation, page and object caching, and fixes for meta tags and structured data. Across the audited sites the results were a 2.4 times improvement in page speed, a 45 percent increase in SEO score and a 27 percent increase in user engagement.
+
+5. Web Designer Intern, Sun Software (Jan 2020 to Apr 2020)
+- Developed modules for the Parent Interaction System and Bio Bags Store using OpenCart, HTML, CSS and MariaDB, and built responsive interfaces connected to dynamic databases.
+
+EDUCATION
+- Master of Computer Application (MCA), Gujarat Technological University, 2020, CGPA 7.86
+- Bachelor of Computer Application (BCA), Veer Narmad South Gujarat University, 2017, 67.68 percent
+
+CERTIFICATIONS (WordPress VIP Learn, 2026)
+- Enterprise WordPress Performance
+- Enterprise WordPress Security
+- WordPress VIP Architecture and Tooling
+- Advanced WordPress Debugging
+- Mastering the WordPress REST API
+- Enterprise Block Editor
+- Development, Build, Test, and Deployment
+
+CASE STUDIES
+- https://salonirajput30.github.io/projects/tecocraft-performance.html
+- https://salonirajput30.github.io/projects/ikozy-woocommerce.html
+- https://salonirajput30.github.io/projects/holger.html
+- https://salonirajput30.github.io/projects/gemini-business.html
+- https://salonirajput30.github.io/projects/repair-blogs.html
+- https://salonirajput30.github.io/projects/comestey.html
+- https://salonirajput30.github.io/projects/smartsolar.html
+- https://salonirajput30.github.io/projects/sled-mtheory.html
+- https://salonirajput30.github.io/projects/breathingcenter.html

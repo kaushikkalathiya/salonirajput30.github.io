@@ -1,766 +1,1062 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saloni Rajput — WordPress Developer | Custom Themes, WooCommerce & Performance</title>
-  <meta name="description" content="Saloni Rajput is a Senior WordPress Developer with 4+ years of experience building fast, scalable and high-performance WordPress websites. Specialising in WooCommerce, custom themes, custom plugins, ACF, REST API and Core Web Vitals.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://salonirajput30.github.io/">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saloni S. Rajput | Senior WordPress Developer in Surat</title>
+    <meta
+      name="description"
+      content="Senior WordPress Developer in Surat, India with over four years of experience in custom themes, WooCommerce, REST APIs and Core Web Vitals."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#2563eb" />
+    <link rel="canonical" href="https://salonirajput30.github.io/" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
 
-  <!-- Open Graph -->
-  <meta property="og:type"        content="website">
-  <meta property="og:url"         content="https://salonirajput30.github.io/">
-  <meta property="og:title"       content="Saloni Rajput — WordPress Developer">
-  <meta property="og:description" content="Senior WordPress Developer with 4+ years of experience. WooCommerce, custom themes, plugins, ACF, REST API & Core Web Vitals expert.">
-  <meta property="og:site_name"   content="Saloni Rajput Portfolio">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://salonirajput30.github.io/" />
+    <meta
+      property="og:title"
+      content="Saloni S. Rajput | Senior WordPress Developer"
+    />
+    <meta
+      property="og:description"
+      content="WordPress and WooCommerce developer in Surat, India with over four years of experience in custom themes, plugins, REST APIs and performance."
+    />
+    <meta
+      property="og:image"
+      content="https://salonirajput30.github.io/assets/og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Saloni S. Rajput Portfolio" />
 
-  <!-- Twitter -->
-  <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:title"       content="Saloni Rajput — WordPress Developer">
-  <meta name="twitter:description" content="Senior WordPress Developer with 4+ years of experience building fast, scalable WordPress websites.">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Saloni S. Rajput | Senior WordPress Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Senior WordPress Developer in Surat, India specialising in custom themes, WooCommerce and WordPress REST APIs."
+    />
+    <meta
+      name="twitter:image"
+      content="https://salonirajput30.github.io/assets/og-image.png"
+    />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("saloni-theme");
+          if (t === "dark" || t === "light")
+            document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/components.css">
-  <link rel="stylesheet" href="assets/css/responsive.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://salonirajput30.github.io/#website",
+            "url": "https://salonirajput30.github.io/",
+            "name": "Saloni S. Rajput Portfolio",
+            "publisher": { "@id": "https://salonirajput30.github.io/#person" }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://salonirajput30.github.io/#person",
+            "name": "Saloni S. Rajput",
+            "jobTitle": "Senior WordPress Developer",
+            "url": "https://salonirajput30.github.io/",
+            "email": "Rsaloni223@gmail.com",
+            "telephone": "+91 70487 31433",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Surat",
+              "addressRegion": "Gujarat",
+              "addressCountry": "IN"
+            },
+            "sameAs": [
+              "https://github.com/SaloniRajput30",
+              "https://www.linkedin.com/in/saloni-rajput-704a52219"
+            ],
+            "alumniOf": [
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "Gujarat Technological University"
+              },
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "Veer Narmad South Gujarat University"
+              }
+            ],
+            "knowsAbout": [
+              "WordPress",
+              "WooCommerce",
+              "PHP",
+              "JavaScript",
+              "SQL",
+              "WordPress REST API",
+              "Advanced Custom Fields (ACF)",
+              "Custom Post Types",
+              "Gutenberg Blocks",
+              "Elementor Pro",
+              "Divi Builder",
+              "Bedrock",
+              "Core Web Vitals",
+              "Technical SEO",
+              "MySQL",
+              "MariaDB"
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "@id": "https://salonirajput30.github.io/#services",
+            "name": "WordPress and WooCommerce Development Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Custom WordPress Theme and Plugin Development",
+                  "provider": {
+                    "@id": "https://salonirajput30.github.io/#person"
+                  }
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "WooCommerce Customisation and Checkout Development",
+                  "provider": {
+                    "@id": "https://salonirajput30.github.io/#person"
+                  }
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "WordPress REST API Development and Integration",
+                  "provider": {
+                    "@id": "https://salonirajput30.github.io/#person"
+                  }
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "HTML to WordPress Migration and Performance Audits",
+                  "provider": {
+                    "@id": "https://salonirajput30.github.io/#person"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://salonirajput30.github.io/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Who is Saloni S. Rajput?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Saloni S. Rajput is a Senior WordPress Developer based in Surat, Gujarat, India, with over four years of professional experience building custom WordPress themes, plugins, WooCommerce stores and REST APIs."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What WordPress and WooCommerce services does she offer?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "She builds custom WordPress themes and plugins using ACF and custom post types, customises WooCommerce product templates and checkout flows, migrates static HTML sites to WordPress, develops authenticated REST APIs, and audits existing sites for Core Web Vitals and technical SEO."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How many years of WordPress experience does Saloni have?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "She has over four years of professional WordPress development experience across WebbyGenius Infotech, Narola Infotech, Triospire Web Solution and Tecocraft Infusion, following an internship at Sun Software in 2020."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does she have experience with the WordPress REST API and backend systems?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Most recently at WebbyGenius Infotech (Dec 2025 to Feb 2026), she built REST APIs with authentication and input validation for an account management system and a payslip maker application."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What certifications does Saloni hold?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "She holds seven WordPress VIP Learn certificates earned in 2026: Enterprise WordPress Performance, Enterprise WordPress Security, WordPress VIP Architecture and Tooling, Advanced WordPress Debugging, Mastering the WordPress REST API, Enterprise Block Editor, and Development, Build, Test, and Deployment."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is she available for freelance WordPress projects or full-time roles?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. She works independently, leads modules and communicates directly with international clients, and is open to both full-time engineering roles and freelance WordPress or WooCommerce projects."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How can recruiters or clients contact Saloni?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "You can email Rsaloni223@gmail.com, call +91 70487 31433, connect on LinkedIn, or download her PDF resume directly from this website."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- JSON-LD: Person -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Saloni Rajput",
-    "jobTitle": "Senior WordPress Developer",
-    "email": "rsaloni223@gmail.com",
-    "url": "https://salonirajput30.github.io/",
-    "sameAs": [
-      "https://github.com/SaloniRajput30",
-      "https://www.linkedin.com/in/saloni-rajput-704a52219/"
-    ],
-    "knowsAbout": ["WordPress", "WooCommerce", "PHP", "REST API", "ACF", "Custom Plugin Development", "Custom Theme Development", "Core Web Vitals", "MySQL", "AJAX"]
-  }
-  </script>
-
-  <!-- JSON-LD: WebSite -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Saloni Rajput Portfolio",
-    "url": "https://salonirajput30.github.io/"
-  }
-  </script>
-
-  <style>
-    /* ── Hero entry animations ── */
-    @keyframes hero-fade-up {
-      from { opacity: 0; transform: translateY(20px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-    .hero-animate { animation: hero-fade-up 0.7s ease both; }
-    .hero-animate--1 { animation-delay: 0.05s; }
-    .hero-animate--2 { animation-delay: 0.15s; }
-    .hero-animate--3 { animation-delay: 0.25s; }
-    .hero-animate--4 { animation-delay: 0.38s; }
-    .hero-animate--5 { animation-delay: 0.50s; }
-
-    /* ── Tech stack grid ── */
-    .tech-stack-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    /* ── Featured project grid ── */
-    .featured-projects {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-
-    @media (max-width: 1024px) { .featured-projects { grid-template-columns: 1fr 1fr; } }
-    @media (max-width: 600px)  { .featured-projects { grid-template-columns: 1fr; } }
-
-    /* ── Metrics section bg ── */
-    .metrics-section { background: var(--bg-subtle); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-
-    /* ── About preview ── */
-    .about-preview-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--space-12);
-      align-items: center;
-    }
-    @media (max-width: 768px) { .about-preview-grid { grid-template-columns: 1fr; } }
-
-    /* ── Service grid (homepage) ── */
-    .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); }
-    @media (max-width: 1024px) { .service-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 600px)  { .service-grid { grid-template-columns: 1fr; } }
-
-    /* ── Code visual float badges ── */
-    .code-float-top {
-      position: absolute;
-      top: -16px;
-      right: 24px;
-      z-index: 3;
-    }
-    .code-float-bottom {
-      position: absolute;
-      bottom: -16px;
-      left: 24px;
-      z-index: 3;
-    }
-
-    /* ── Hero bg decorative dots ── */
-    .hero-dots {
-      position: absolute;
-      top: 30%;
-      right: -60px;
-      width: 240px;
-      height: 240px;
-      background-image: radial-gradient(var(--border-strong) 1.5px, transparent 1.5px);
-      background-size: 20px 20px;
-      opacity: 0.5;
-      pointer-events: none;
-    }
-
-    @media (max-width: 1024px) {
-      .hero-dots { display: none; }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- ====================================================================
-       SITE HEADER
-       ==================================================================== -->
-  <header class="site-header" role="banner">
-    <div class="nav-inner">
-      <a href="/" class="nav-wordmark" aria-label="Saloni Rajput — Home">
-        Saloni<span>.dev</span>
-      </a>
-
-      <nav class="nav-links" aria-label="Main navigation">
-        <a href="/"            class="nav-link active">Home</a>
-        <a href="about.html"   class="nav-link">About</a>
-        <a href="projects.html" class="nav-link">Projects</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-      </nav>
-
-      <div class="nav-actions">
-        <!-- GitHub -->
-        <a href="https://github.com/SaloniRajput30" class="nav-icon-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-        </a>
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/saloni-rajput-704a52219/" class="nav-icon-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-        <a href="contact.html" class="btn btn-primary btn-sm">Let's talk</a>
+    <header class="site-header" role="banner">
+      <div class="nav-inner">
+        <a
+          href="index.html"
+          class="nav-wordmark"
+          aria-label="Saloni S. Rajput - Home"
+          >Saloni<span>.dev</span></a
+        >
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button
+            type="button"
+            class="theme-toggle"
+            data-theme-toggle
+            aria-pressed="false"
+            aria-label="Switch to dark mode"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"
+              />
+            </svg>
+          </button>
+          <a
+            href="https://github.com/SaloniRajput30"
+            class="nav-icon-link desktop-only"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub profile"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+              />
+            </svg>
+          </a>
+          <a href="contact.html" class="btn btn-primary btn-sm nav-cta-desktop"
+            >Contact me</a
+          >
+          <button
+            type="button"
+            class="nav-hamburger"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
       </div>
+    </header>
 
-      <!-- Hamburger -->
-      <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
-        <span></span><span></span><span></span>
-      </button>
+    <div
+      class="mobile-nav"
+      id="mobile-nav"
+      aria-hidden="true"
+      role="dialog"
+      aria-label="Navigation menu"
+    >
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="projects.html" class="mobile-nav-link">Projects</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+      <div class="mobile-nav-actions">
+        <a
+          href="assets/saloni-rajput-wordpress-developer-resume.pdf"
+          class="btn btn-secondary btn-sm"
+          download
+          >Download Resume</a
+        >
+        <a href="contact.html" class="btn btn-primary btn-sm">Contact me</a>
+      </div>
     </div>
-  </header>
 
-  <!-- Mobile nav -->
-  <div class="mobile-nav" id="mobile-nav" aria-hidden="true" role="dialog" aria-label="Navigation menu">
-    <a href="/"             class="mobile-nav-link">Home</a>
-    <a href="about.html"    class="mobile-nav-link">About</a>
-    <a href="projects.html" class="mobile-nav-link">Projects</a>
-    <a href="contact.html"  class="mobile-nav-link">Contact</a>
-    <div class="mobile-nav-actions">
-      <a href="https://github.com/SaloniRajput30" class="btn btn-secondary btn-sm" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href="contact.html" class="btn btn-primary btn-sm">Let's talk</a>
-    </div>
-  </div>
-
-  <main>
-
-    <!-- ==================================================================
-         HERO
-         ================================================================== -->
-    <section class="hero" aria-label="Introduction">
-      <div class="hero-bg-grid" aria-hidden="true"></div>
-      <div class="hero-bg-glow"  aria-hidden="true"></div>
-      <div class="hero-dots"     aria-hidden="true"></div>
-
-      <div class="container">
-        <div class="hero-grid">
-
-          <!-- Left — content -->
-          <div>
-            <div class="hero-animate hero-animate--1">
-              <div class="status-badge" style="margin-bottom: 20px;">
+    <main id="main-content">
+      <!-- HERO -->
+      <section class="hero" aria-label="Introduction">
+        <div class="container">
+          <div class="hero-grid">
+            <div>
+              <div class="status-badge">
                 <span class="status-dot" aria-hidden="true"></span>
-                Available for new projects
+                Available for WordPress and WooCommerce work
+              </div>
+              <h1 class="hero-title">
+                Saloni S. Rajput:
+                <span class="accent">Senior WordPress Developer</span>
+              </h1>
+              <p class="hero-subtitle">
+                Based in Surat, Gujarat, India, with over four years of
+                professional experience building custom WordPress themes,
+                plugins, WooCommerce stores and authenticated REST APIs for
+                client and internal applications.
+              </p>
+              <div class="hero-actions">
+                <a href="projects.html" class="btn btn-primary"
+                  >View Projects</a
+                >
+                <a
+                  href="assets/saloni-rajput-wordpress-developer-resume.pdf"
+                  class="btn btn-secondary"
+                  download
+                  >Download Resume (PDF)</a
+                >
+                <a href="contact.html" class="btn btn-ghost">Contact me</a>
+              </div>
+              <div class="hero-social">
+                <span class="hero-social-label">Direct links:</span>
+                <div class="hero-social-links">
+                  <a
+                    href="https://github.com/SaloniRajput30"
+                    class="hero-social-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                  >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/saloni-rajput-704a52219"
+                    class="hero-social-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                  >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="mailto:Rsaloni223@gmail.com"
+                    class="hero-social-link"
+                    aria-label="Email Rsaloni223@gmail.com"
+                  >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
+                      />
+                      <path
+                        d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div class="hero-animate hero-animate--2">
-              <div class="hero-tag" aria-hidden="true">
-                Senior WordPress Developer &mdash; 4+ Years
-              </div>
-            </div>
-
-            <h1 class="hero-title hero-animate hero-animate--3">
-              <span class="line">Building fast,</span>
-              <span class="line">scalable <span class="accent">WordPress</span></span>
-              <span class="line">experiences.</span>
-            </h1>
-
-            <p class="hero-subtitle hero-animate hero-animate--4">
-              I craft custom WordPress solutions — from high-performance themes and plugins to complex WooCommerce builds and REST API integrations — that drive measurable business results.
-            </p>
-
-            <div class="hero-actions hero-animate hero-animate--5">
-              <a href="projects.html" class="btn btn-primary">
-                View Projects
-                <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
-              </a>
-              <a href="contact.html" class="btn btn-secondary">
-                Let's Work Together
-              </a>
-            </div>
-
-            <div class="hero-social hero-animate hero-animate--5">
-              <span class="hero-social-label">Find me on</span>
-              <div class="hero-social-links">
-                <a href="https://github.com/SaloniRajput30" class="hero-social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                  <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                </a>
-                <a href="https://www.linkedin.com/in/saloni-rajput-704a52219/" class="hero-social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                  <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                </a>
-                <a href="mailto:rsaloni223@gmail.com" class="hero-social-link" aria-label="Email">
-                  <svg viewBox="0 0 24 24"><path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"/><path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"/></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right — code visual -->
-          <div class="hero-code-col" aria-hidden="true">
-            <!-- Float badge top -->
-            <div class="hero-float-badge accent code-float-top">
-              <span class="status-dot"></span>
-              Available for work
-            </div>
-
-            <!-- Code window -->
-            <div class="code-window" style="width: 100%; max-width: 440px;">
+            <div class="code-window" aria-hidden="true">
               <div class="code-titlebar">
                 <span class="code-dot code-dot-red"></span>
                 <span class="code-dot code-dot-yellow"></span>
                 <span class="code-dot code-dot-green"></span>
-                <span class="code-filename">plugin-optimiser.php</span>
+                <span class="code-filename">wp-rest-endpoint.php</span>
               </div>
-              <div class="code-body">
-                <div class="code-line"><span class="code-ln">1</span><span class="code-cm">// Performance-first WordPress development</span></div>
-                <div class="code-line"><span class="code-ln">2</span><span class="code-kw">class</span> <span class="code-typ">SaloniDeveloper</span> <span class="code-pu">{</span></div>
-                <div class="code-line"><span class="code-ln">3</span>&nbsp;&nbsp;<span class="code-kw">public</span> <span class="code-vr">$experience</span> <span class="code-pu">=</span> <span class="code-str">'4+ years'</span><span class="code-pu">;</span></div>
-                <div class="code-line"><span class="code-ln">4</span>&nbsp;&nbsp;<span class="code-kw">public</span> <span class="code-vr">$stack</span> <span class="code-pu">= [</span></div>
-                <div class="code-line"><span class="code-ln">5</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-str">'WordPress'</span><span class="code-pu">,</span> <span class="code-str">'WooCommerce'</span><span class="code-pu">,</span></div>
-                <div class="code-line"><span class="code-ln">6</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-str">'PHP'</span><span class="code-pu">,</span> <span class="code-str">'ACF'</span><span class="code-pu">,</span> <span class="code-str">'REST API'</span><span class="code-pu">,</span></div>
-                <div class="code-line"><span class="code-ln">7</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-str">'MySQL'</span><span class="code-pu">,</span> <span class="code-str">'Core Web Vitals'</span></div>
-                <div class="code-line"><span class="code-ln">8</span>&nbsp;&nbsp;<span class="code-pu">];</span></div>
-                <div class="code-line"><span class="code-ln">9</span>&nbsp;</div>
-                <div class="code-line"><span class="code-ln">10</span>&nbsp;&nbsp;<span class="code-kw">public function</span> <span class="code-fn">optimize</span><span class="code-pu">(</span><span class="code-vr">$site</span><span class="code-pu">) {</span></div>
-                <div class="code-line"><span class="code-ln">11</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-vr">$speed</span> <span class="code-pu">=</span> <span class="code-vr">$site</span><span class="code-pu">-&gt;</span><span class="code-fn">speed</span> <span class="code-pu">*</span> <span class="code-nu">2.4</span><span class="code-pu">;</span></div>
-                <div class="code-line"><span class="code-ln">12</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-vr">$seo</span> <span class="code-pu">=</span> <span class="code-vr">$site</span><span class="code-pu">-&gt;</span><span class="code-fn">seo</span> <span class="code-pu">+</span> <span class="code-nu">45</span><span class="code-pu">;</span></div>
-                <div class="code-line"><span class="code-ln">13</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-kw">return</span> <span class="code-fn">compact</span><span class="code-pu">(</span><span class="code-str">'speed'</span><span class="code-pu">,</span> <span class="code-str">'seo'</span><span class="code-pu">);</span></div>
-                <div class="code-line"><span class="code-ln">14</span>&nbsp;&nbsp;<span class="code-pu">}</span></div>
-                <div class="code-line"><span class="code-ln">15</span><span class="code-pu">}</span></div>
-                <div class="code-line"><span class="code-ln">16</span><span class="code-vr">$dev</span> <span class="code-pu">=</span> <span class="code-kw">new</span> <span class="code-typ">SaloniDeveloper</span><span class="code-pu">();</span><span class="code-cursor"></span></div>
-              </div>
-            </div>
+              <pre
+                class="code-body"
+              ><code><span class="code-cm">// WordPress REST API &amp; performance workflow</span>
+<span class="code-kw">register_rest_route</span>(<span class="code-str">'app/v1'</span>, <span class="code-str">'/accounts'</span>, [
+  <span class="code-str">'methods'</span>             =&gt; <span class="code-str">'POST'</span>,
+  <span class="code-str">'permission_callback'</span> =&gt; <span class="code-kw">function</span>() {
+    <span class="code-kw">return</span> <span class="code-fn">current_user_can</span>(<span class="code-str">'manage_options'</span>);
+  },
+  <span class="code-str">'callback'</span>            =&gt; <span class="code-str">'saloni_handle_account'</span>,
+]);
 
-            <!-- Float badge bottom -->
-            <div class="hero-float-badge code-float-bottom">
-              <svg style="width:14px;height:14px;fill:var(--accent);flex-shrink:0;" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-              Core Web Vitals Expert
+<span class="code-vr">$stack</span> = [
+  <span class="code-str">'WordPress'</span>, <span class="code-str">'WooCommerce'</span>, <span class="code-str">'PHP'</span>,
+  <span class="code-str">'ACF &amp; CPT'</span>, <span class="code-str">'REST API'</span>, <span class="code-str">'Core Web Vitals'</span>
+];</code></pre>
             </div>
           </div>
-
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ==================================================================
-         METRICS
-         ================================================================== -->
-    <section class="metrics-section section-sm" aria-label="Key metrics">
-      <div class="container">
-        <div class="metrics-grid stagger">
-          <div class="metric-card reveal">
-            <span class="metric-value" data-counter data-target="4" data-suffix="+" aria-label="4+ years experience">0</span>
-            <span class="metric-label">Years Experience</span>
-          </div>
-          <div class="metric-card reveal">
-            <span class="metric-value" data-counter data-target="2.4" data-suffix="×" data-decimals="1" aria-label="2.4 times page speed improvement">0</span>
-            <span class="metric-label">Page Speed Improvement</span>
-          </div>
-          <div class="metric-card reveal">
-            <span class="metric-value" data-counter data-target="45" data-suffix="%" aria-label="45% SEO uplift">0</span>
-            <span class="metric-label">SEO Score Uplift</span>
-          </div>
-          <div class="metric-card reveal">
-            <span class="metric-value" data-counter data-target="27" data-suffix="%" aria-label="27% user engagement boost">0</span>
-            <span class="metric-label">User Engagement Boost</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================================================================
-         ABOUT PREVIEW
-         ================================================================== -->
-    <section class="section" aria-labelledby="about-preview-heading">
-      <div class="container">
-        <div class="about-preview-grid">
-          <div class="reveal-left">
-            <div class="section-label" aria-hidden="true">About me</div>
-            <h2 class="section-heading" id="about-preview-heading">
-              A developer who cares about the details that matter.
+      <!-- QUICK FACTS (AEO) -->
+      <section class="section-sm" aria-labelledby="quick-facts-heading">
+        <div class="container">
+          <div class="quick-facts glass-panel">
+            <div class="section-label">Quick facts</div>
+            <h2
+              class="section-heading"
+              id="quick-facts-heading"
+              style="font-size: clamp(1.35rem, 2.5vw, 1.75rem)"
+            >
+              Who is Saloni S. Rajput?
             </h2>
-            <p style="color: var(--text-secondary); line-height: 1.75; margin-bottom: 24px;">
-              I'm a Senior WordPress Developer with over four years of professional experience building production-grade websites for international clients. My work spans custom theme and plugin development, WooCommerce builds, REST API integrations, and deep performance engineering.
+            <p>
+              Saloni S. Rajput is a Senior WordPress Developer based in Surat,
+              Gujarat, India, with over four years of experience building custom
+              WordPress themes, plugins, WooCommerce stores and authenticated
+              REST APIs. You can reach her at
+              <a
+                href="mailto:Rsaloni223@gmail.com"
+                style="color: var(--accent); text-decoration: underline"
+                >Rsaloni223@gmail.com</a
+              >
+              or
+              <a
+                href="tel:+917048731433"
+                style="color: var(--accent); text-decoration: underline"
+                >+91 70487 31433</a
+              >.
             </p>
-            <p style="color: var(--text-secondary); line-height: 1.75; margin-bottom: 32px;">
-              Across roles at <strong style="color: var(--text-primary); font-weight: 600;">Narola Infotech</strong>, <strong style="color: var(--text-primary); font-weight: 600;">Triospire</strong>, and <strong style="color: var(--text-primary); font-weight: 600;">Tecocraft</strong>, I've delivered measurable improvements in speed, SEO, and user engagement — consistently prioritising clean, maintainable code over quick fixes.
-            </p>
-            <a href="about.html" class="btn btn-ghost">
-              Read my story
-              <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
-            </a>
-          </div>
-
-          <div class="reveal-right" style="display: flex; flex-direction: column; gap: 12px;">
-            <div class="card card-sm" style="border-left: 3px solid var(--accent);">
-              <div style="font-size: 0.78rem; font-weight: 600; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px;">Current Role</div>
-              <div style="font-size: 1rem; font-weight: 700; color: var(--text-primary);">Open to Opportunities</div>
-              <div style="font-size: 0.875rem; color: var(--text-secondary); margin-top: 2px;">WordPress &amp; WooCommerce Development</div>
-            </div>
-            <div class="card card-sm">
-              <div style="font-size: 0.78rem; font-weight: 600; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px;">Education</div>
-              <div style="font-size: 0.9375rem; font-weight: 600; color: var(--text-primary);">MCA — Gujarat Technological University</div>
-              <div style="font-size: 0.825rem; color: var(--text-tertiary); margin-top: 2px;">CGPA: 7.86 &middot; 2020</div>
-            </div>
-            <div class="card card-sm">
-              <div style="font-size: 0.78rem; font-weight: 600; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px;">Expertise</div>
-              <div style="display: flex; flex-wrap: wrap; gap: 6px;">
-                <span class="badge badge-accent">WordPress</span>
-                <span class="badge badge-accent">WooCommerce</span>
-                <span class="badge badge-accent">Core Web Vitals</span>
-                <span class="badge badge-surface">PHP</span>
-                <span class="badge badge-surface">REST API</span>
+            <div class="quick-facts-grid">
+              <div>
+                <div class="quick-fact-label">Role &amp; Location</div>
+                <div class="quick-fact-value">
+                  Senior WordPress Developer, Surat, India
+                </div>
+              </div>
+              <div>
+                <div class="quick-fact-label">Experience</div>
+                <div class="quick-fact-value">Over 4 years (2020 to 2026)</div>
+              </div>
+              <div>
+                <div class="quick-fact-label">Core Stack</div>
+                <div class="quick-fact-value">
+                  WordPress, WooCommerce, PHP, ACF, REST API
+                </div>
+              </div>
+              <div>
+                <div class="quick-fact-label">Education</div>
+                <div class="quick-fact-value">
+                  MCA (GTU, 2020) &amp; BCA (VNSGU, 2017)
+                </div>
+              </div>
+              <div>
+                <div class="quick-fact-label">Certifications</div>
+                <div class="quick-fact-value">
+                  7 WordPress VIP Learn Certificates (2026)
+                </div>
+              </div>
+              <div>
+                <div class="quick-fact-label">Resume</div>
+                <div class="quick-fact-value">
+                  <a
+                    href="assets/saloni-rajput-wordpress-developer-resume.pdf"
+                    style="color: var(--accent); text-decoration: underline"
+                    download
+                    >Download PDF Resume</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ==================================================================
-         CORE EXPERTISE
-         ================================================================== -->
-    <section class="section" style="background: var(--bg-subtle); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);" aria-labelledby="expertise-heading">
-      <div class="container">
-        <div class="reveal" style="text-align: center; margin-bottom: 56px;">
-          <div class="section-label" style="justify-content: center;" aria-hidden="true">Expertise</div>
-          <h2 class="section-heading" id="expertise-heading" style="margin-left: auto; margin-right: auto;">Core skill areas</h2>
-          <p class="section-subheading" style="margin: 0 auto;">Everything needed to design, build, and maintain high-performance WordPress websites.</p>
+      <!-- CORE SKILLS -->
+      <section class="section" aria-labelledby="expertise-heading">
+        <div class="container">
+          <div class="section-label">Capabilities</div>
+          <h2 class="section-heading" id="expertise-heading">
+            Core WordPress and WooCommerce capabilities
+          </h2>
+          <p class="section-subheading" style="margin-bottom: var(--space-8)">
+            Practical engineering across custom WordPress architecture,
+            WooCommerce customisation, REST APIs and technical performance work.
+          </p>
+
+          <div class="grid-3">
+            <article class="service-card glass-panel">
+              <h3 class="service-title">Custom WordPress Development</h3>
+              <p class="service-desc">
+                Custom themes, child themes, plugins, ACF, custom post types,
+                hooks and filters, Gutenberg blocks, Elementor Pro, Divi Builder
+                and Bedrock.
+              </p>
+            </article>
+            <article class="service-card glass-panel">
+              <h3 class="service-title">WooCommerce Development</h3>
+              <p class="service-desc">
+                WooCommerce template overrides, custom one-page checkout flows
+                with hooks and filters, product layouts, product filtering,
+                payment gateway integration and cart modifications.
+              </p>
+            </article>
+            <article class="service-card glass-panel">
+              <h3 class="service-title">Performance and Core Web Vitals</h3>
+              <p class="service-desc">
+                Plugin audits, conditional asset loading, slow database query
+                fixes, Transients API caching, page and object caching, and Core
+                Web Vitals expertise.
+              </p>
+            </article>
+            <article class="service-card glass-panel">
+              <h3 class="service-title">REST API and Backend Systems</h3>
+              <p class="service-desc">
+                WordPress REST API endpoints, authentication, input validation,
+                third-party integrations, AJAX workflows and headless WordPress
+                data layers.
+              </p>
+            </article>
+            <article class="service-card glass-panel">
+              <h3 class="service-title">HTML to WordPress Migration</h3>
+              <p class="service-desc">
+                Converting static HTML websites into structured WordPress
+                platforms with custom post types, ACF fields and custom
+                redirection logic.
+              </p>
+            </article>
+            <article class="service-card glass-panel">
+              <h3 class="service-title">Technical SEO and Security</h3>
+              <p class="service-desc">
+                On-page SEO, schema markup, clean URLs, nonces, data
+                sanitisation, capability checks, uptime management and
+                MySQL/MariaDB optimisation.
+              </p>
+            </article>
+          </div>
         </div>
+      </section>
 
-        <div class="service-grid stagger">
-          <div class="service-card reveal">
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 3c1.954 0 3.741.716 5.122 1.894L5.894 17.122A7.962 7.962 0 0 1 4 12c0-4.411 3.589-8 8-8zm0 14a7.968 7.968 0 0 1-5.122-1.894L18.106 6.878A7.962 7.962 0 0 1 20 12c0 4.411-3.589 8-8 8z"/></svg>
-            </div>
-            <div class="service-title">WordPress Development</div>
-            <p class="service-desc">Custom themes, child themes, plugin development, CPTs, ACF Pro, Elementor, Divi, Gutenberg — production-ready builds.</p>
-          </div>
-
-          <div class="service-card reveal">
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M4 4h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm0 10h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1zm3 2H5v2h2v-2zm0-10H5v2h2V6z"/></svg>
-            </div>
-            <div class="service-title">WooCommerce</div>
-            <p class="service-desc">Custom checkout flows, dynamic product layouts, payment gateway integration, cart modifications and conversion optimisation.</p>
-          </div>
-
-          <div class="service-card reveal">
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-            </div>
-            <div class="service-title">Performance & Core Web Vitals</div>
-            <p class="service-desc">Deep technical audits, caching, database optimisation, render-blocking asset elimination, and measurable Lighthouse score improvements.</p>
-          </div>
-
-          <div class="service-card reveal">
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-3 3h2v2h-2V7zm-4 0h2v2h-2V7zM4 19V7h11v2H9v2h6v2H9v2h8.938L18 19H4z"/></svg>
-            </div>
-            <div class="service-title">REST API & Custom Endpoints</div>
-            <p class="service-desc">WordPress REST API development, custom endpoint creation, third-party API integrations, and AJAX-powered dynamic functionality.</p>
-          </div>
-
-          <div class="service-card reveal">
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M20 6h-2.18c.07-.44.18-.86.18-1.3C18 2.1 15.9 0 13.3 0c-1.5 0-2.7.72-3.56 1.83L12 4.34 14.26 1.8C14.72 1.3 15.2 1 15.7 1c1.4 0 2.5 1.12 2.5 2.5 0 .78-.37 1.47-.9 1.93L14 9h6v11H4V9h6L7.2 6.43c-.53-.46-.9-1.15-.9-1.93C6.3 3.12 7.4 2 8.8 2c.5 0 .98.3 1.44.8L12 4.34 14.26 1.8C13.4.72 12.2 0 10.7 0 8.1 0 6 2.1 6 4.7c0 .44.11.86.18 1.3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"/></svg>
-            </div>
-            <div class="service-title">HTML to WordPress Migration</div>
-            <p class="service-desc">Converting static HTML websites into fully managed, dynamic WordPress platforms with structured content architecture and SEO preservation.</p>
-          </div>
-
-          <div class="service-card reveal">
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="m21.406 6.086-9-4a1 1 0 0 0-.812 0l-9 4c-.556.24-.584 1.044-.084 1.32L12 12.869l9.49-5.463c.5-.276.472-1.08-.084-1.32zM12 14.87 2.51 9.406C2.012 9.13 1.5 9.5 1.5 10.067v7.866a1 1 0 0 0 .553.894l9 4.5a1 1 0 0 0 .894 0l9-4.5a1 1 0 0 0 .553-.894v-7.866c0-.567-.512-.937-1.01-.661L12 14.87z"/></svg>
-            </div>
-            <div class="service-title">Technical SEO & Security</div>
-            <p class="service-desc">On-page SEO, structured data, schema markup, website hardening, security audits, malware prevention and maintenance protocols.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================================================================
-         FEATURED PROJECTS
-         ================================================================== -->
-    <section class="section" aria-labelledby="projects-heading">
-      <div class="container">
-        <div class="reveal" style="display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 48px; flex-wrap: wrap; gap: 16px;">
-          <div>
-            <div class="section-label" aria-hidden="true">Work</div>
-            <h2 class="section-heading" id="projects-heading" style="margin-bottom: 0;">Featured projects</h2>
-          </div>
-          <a href="projects.html" class="btn btn-ghost">
-            View all projects
-            <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
-          </a>
-        </div>
-
-        <!-- Featured: Tecocraft -->
-        <div class="project-featured reveal" style="margin-bottom: 24px;">
-          <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 20px;">
+      <!-- FEATURED WORK -->
+      <section class="section" aria-labelledby="projects-heading">
+        <div class="container">
+          <div
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              align-items: flex-end;
+              gap: 16px;
+              margin-bottom: var(--space-8);
+            "
+          >
             <div>
-              <span class="badge badge-accent" style="margin-bottom: 12px;">Featured Case Study</span>
-              <h3 style="font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; color: var(--text-primary); margin-bottom: 8px;">Performance &amp; SEO Engineering — Tecocraft</h3>
-              <p style="color: var(--text-secondary); font-size: 0.9375rem; line-height: 1.7; max-width: 620px;">Deep technical audit and full refactor of legacy WordPress builds. Eliminated bloated plugins, resolved unindexed database queries, removed render-blocking assets and implemented caching layers — resulting in measurable Core Web Vitals improvements and organic search gains.</p>
+              <div class="section-label">Selected Work</div>
+              <h2
+                class="section-heading"
+                id="projects-heading"
+                style="margin-bottom: 0"
+              >
+                Featured WordPress projects
+              </h2>
             </div>
-            <a href="projects/tecocraft-performance.html" class="btn btn-secondary" style="flex-shrink: 0;">
-              View Case Study
-              <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
-            </a>
+            <a href="projects.html" class="btn btn-secondary btn-sm"
+              >View all projects</a
+            >
           </div>
 
-          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px;" class="results-grid">
-            <div style="background: var(--accent-lighter); border: 1px solid var(--accent-border); border-radius: 12px; padding: 20px; text-align: center;">
-              <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent); letter-spacing: -0.04em; line-height: 1;">2.4×</div>
-              <div style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-top: 4px;">Page Speed</div>
+          <article
+            class="card glass-panel"
+            style="margin-bottom: var(--space-6)"
+          >
+            <div class="project-card-category">
+              Tecocraft Infusion Pvt. Ltd.
             </div>
-            <div style="background: var(--accent2-light); border: 1px solid rgba(59,76,184,0.2); border-radius: 12px; padding: 20px; text-align: center;">
-              <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent2); letter-spacing: -0.04em; line-height: 1;">45%</div>
-              <div style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent2); margin-top: 4px;">SEO Uplift</div>
-            </div>
-            <div style="background: #FFF7ED; border: 1px solid #FED7AA; border-radius: 12px; padding: 20px; text-align: center;">
-              <div style="font-size: 2.5rem; font-weight: 800; color: #C2410C; letter-spacing: -0.04em; line-height: 1;">27%</div>
-              <div style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #C2410C; margin-top: 4px;">Engagement Boost</div>
-            </div>
-          </div>
-
-          <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-            <span class="tech-badge">PHP</span>
-            <span class="tech-badge">ACF</span>
-            <span class="tech-badge">Core Web Vitals</span>
-            <span class="tech-badge">Caching</span>
-            <span class="tech-badge">Technical SEO</span>
-            <span class="tech-badge">MySQL</span>
-          </div>
-        </div>
-
-        <!-- Other featured projects -->
-        <div class="featured-projects stagger">
-
-          <div class="project-card reveal" data-category="woocommerce,wordpress">
-            <div class="project-card-visual">
-              <div class="project-card-visual-inner" style="background: linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 100%);">
-                <svg style="width: 48px; height: 48px; fill: var(--accent); opacity: 0.4;" viewBox="0 0 24 24"><path d="M4 4h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm0 10h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1zm3 2H5v2h2v-2zm0-10H5v2h2V6z"/></svg>
-              </div>
-            </div>
-            <div class="project-card-body">
-              <div class="project-card-category">WooCommerce · Narola Infotech</div>
-              <h3 class="project-card-title">Ikozy WooCommerce</h3>
-              <p class="project-card-desc">Full e-commerce platform with a custom WooCommerce checkout flow, dynamic product layouts, and Elementor Pro integration — optimised for conversion and performance.</p>
-              <div class="project-card-tags">
-                <span class="tech-badge">WooCommerce</span>
-                <span class="tech-badge">Elementor Pro</span>
-                <span class="tech-badge">Custom PHP</span>
-              </div>
-              <div class="project-card-footer">
-                <span class="project-card-company">Narola Infotech</span>
-                <a href="projects/ikozy-woocommerce.html" class="project-card-link">
-                  Case Study
-                  <svg style="width:14px;height:14px;fill:currentColor;" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card reveal" data-category="wordpress,migration">
-            <div class="project-card-visual">
-              <div class="project-card-visual-inner" style="background: linear-gradient(135deg, #EEF2FF 0%, #E0E7FF 100%);">
-                <svg style="width: 48px; height: 48px; fill: var(--accent2); opacity: 0.4;" viewBox="0 0 24 24"><path d="M20 6h-2.18c.07-.44.18-.86.18-1.3C18 2.1 15.9 0 13.3 0c-1.5 0-2.7.72-3.56 1.83L12 4.34 14.26 1.8C14.72 1.3 15.2 1 15.7 1c1.4 0 2.5 1.12 2.5 2.5 0 .78-.37 1.47-.9 1.93L14 9h6v11H4V9h6L7.2 6.43c-.53-.46-.9-1.15-.9-1.93C6.3 3.12 7.4 2 8.8 2c.5 0 .98.3 1.44.8L12 4.34 14.26 1.8C13.4.72 12.2 0 10.7 0 8.1 0 6 2.1 6 4.7c0 .44.11.86.18 1.3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"/></svg>
-              </div>
-            </div>
-            <div class="project-card-body">
-              <div class="project-card-category">Migration · Triospire</div>
-              <h3 class="project-card-title">Repair Blogs</h3>
-              <p class="project-card-desc">Converted a static HTML site into a fully managed WordPress platform with Custom Post Types for structured product content and on-page SEO architecture.</p>
-              <div class="project-card-tags">
-                <span class="tech-badge">WordPress</span>
-                <span class="tech-badge">CPT</span>
-                <span class="tech-badge">Technical SEO</span>
-              </div>
-              <div class="project-card-footer">
-                <span class="project-card-company">Triospire</span>
-                <a href="projects/repair-blogs.html" class="project-card-link">
-                  Case Study
-                  <svg style="width:14px;height:14px;fill:currentColor;" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card reveal" data-category="wordpress">
-            <div class="project-card-visual">
-              <div class="project-card-visual-inner" style="background: linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 100%);">
-                <svg style="width: 48px; height: 48px; fill: #0369A1; opacity: 0.4;" viewBox="0 0 24 24"><path d="M19 3H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zm-7 3c1.648 0 3 1.352 3 3s-1.352 3-3 3-3-1.352-3-3 1.352-3 3-3zm4 12H8v-.75C8 15.11 9.795 14 12 14s4 1.11 4 3.25V18z"/></svg>
-              </div>
-            </div>
-            <div class="project-card-body">
-              <div class="project-card-category">Corporate · Narola Infotech</div>
-              <h3 class="project-card-title">Holger — Corporate</h3>
-              <p class="project-card-desc">Pixel-perfect corporate website built with Elementor Pro — precise responsive layout, optimised assets and production-ready delivery to demanding design specifications.</p>
-              <div class="project-card-tags">
-                <span class="tech-badge">Elementor Pro</span>
-                <span class="tech-badge">WordPress</span>
-                <span class="tech-badge">Responsive</span>
-              </div>
-              <div class="project-card-footer">
-                <span class="project-card-company">Narola Infotech</span>
-                <a href="projects/holger.html" class="project-card-link">
-                  Case Study
-                  <svg style="width:14px;height:14px;fill:currentColor;" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================================================================
-         CAREER TIMELINE PREVIEW
-         ================================================================== -->
-    <section class="section" style="background: var(--bg-subtle); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);" aria-labelledby="experience-heading">
-      <div class="container">
-        <div class="reveal" style="margin-bottom: 48px;">
-          <div class="section-label" aria-hidden="true">Experience</div>
-          <h2 class="section-heading" id="experience-heading">Career timeline</h2>
-        </div>
-
-        <div class="timeline">
-          <div class="timeline-item reveal">
-            <div class="timeline-dot" aria-hidden="true"></div>
-            <div class="timeline-header">
-              <div>
-                <div class="timeline-role">Software Engineer <span class="timeline-company">@ Narola Infotech</span></div>
-              </div>
-              <div class="timeline-period">Jan 2025 – Nov 2025</div>
-            </div>
-            <p class="timeline-desc">Developed and maintained dynamic WordPress websites using Elementor and Elementor Pro, ensuring pixel-perfect, production-ready results. Customised WooCommerce layouts to enhance UX and conversions. Built and maintained custom themes and plugins, optimised for speed, SEO, and responsiveness.</p>
-          </div>
-
-          <div class="timeline-item reveal">
-            <div class="timeline-dot" aria-hidden="true"></div>
-            <div class="timeline-header">
-              <div>
-                <div class="timeline-role">Senior WordPress Developer <span class="timeline-company">@ Triospire</span></div>
-              </div>
-              <div class="timeline-period">May 2023 – July 2024</div>
-            </div>
-            <p class="timeline-desc">Led end-to-end development of diverse client websites using Elementor, Divi Builder, and Bedrock Theme. Transformed HTML sites into responsive WordPress platforms, developed custom plugins, themes, and CPTs, and managed website uptime, SEO, and performance optimisation.</p>
-          </div>
-
-          <div class="timeline-item reveal">
-            <div class="timeline-dot" aria-hidden="true"></div>
-            <div class="timeline-header">
-              <div>
-                <div class="timeline-role">Backend &amp; Performance Specialist <span class="timeline-company">@ Tecocraft</span></div>
-              </div>
-              <div class="timeline-period">Feb 2021 – Feb 2023</div>
-            </div>
-            <p class="timeline-desc">Developed custom WordPress themes and plugins using ACF and custom templates. Achieved a 2.4× page speed improvement, 45% SEO score uplift, and 27% user engagement boost through targeted technical audits and refactoring. Converted multiple HTML sites to responsive WordPress builds.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================================================================
-         TECHNOLOGY STACK
-         ================================================================== -->
-    <section class="section" aria-labelledby="stack-heading">
-      <div class="container">
-        <div class="reveal" style="text-align: center; margin-bottom: 48px;">
-          <div class="section-label" style="justify-content: center;" aria-hidden="true">Tech Stack</div>
-          <h2 class="section-heading" id="stack-heading" style="margin-left: auto; margin-right: auto;">Tools &amp; technologies</h2>
-        </div>
-
-        <div style="display: flex; flex-direction: column; gap: 32px;" class="stagger">
-          <div class="reveal">
-            <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-tertiary); margin-bottom: 12px;">WordPress Ecosystem</div>
-            <div class="tech-stack-grid">
-              <span class="tech-badge">WordPress</span>
-              <span class="tech-badge">WooCommerce</span>
-              <span class="tech-badge">ACF / ACF Pro</span>
-              <span class="tech-badge">Elementor Pro</span>
-              <span class="tech-badge">Divi Builder</span>
-              <span class="tech-badge">Gutenberg</span>
-              <span class="tech-badge">Custom Post Types</span>
-              <span class="tech-badge">Bedrock</span>
-            </div>
-          </div>
-          <div style="height: 1px; background: var(--border);" aria-hidden="true"></div>
-          <div class="reveal">
-            <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-tertiary); margin-bottom: 12px;">Backend &amp; Database</div>
-            <div class="tech-stack-grid">
+            <h3 class="project-card-title">
+              Tecocraft Performance and Technical SEO Audits
+            </h3>
+            <p class="project-card-desc">
+              Carried out technical audits of older client sites covering plugin
+              review, conditional asset loading, slow database queries,
+              Transients API caching, deferred scripts, image optimisation, page
+              and object caching, and fixes for meta tags and structured data.
+              Across the audited Tecocraft sites, this work produced a 2.4 times
+              improvement in page speed, a 45 percent increase in SEO score and
+              a 27 percent increase in user engagement.
+            </p>
+            <div class="project-card-tags">
               <span class="tech-badge">PHP</span>
               <span class="tech-badge">MySQL</span>
-              <span class="tech-badge">REST API</span>
-              <span class="tech-badge">AJAX</span>
-              <span class="tech-badge">Custom Plugins</span>
-              <span class="tech-badge">Custom Themes</span>
-            </div>
-          </div>
-          <div style="height: 1px; background: var(--border);" aria-hidden="true"></div>
-          <div class="reveal">
-            <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-tertiary); margin-bottom: 12px;">Frontend</div>
-            <div class="tech-stack-grid">
-              <span class="tech-badge">HTML5</span>
-              <span class="tech-badge">CSS3</span>
-              <span class="tech-badge">JavaScript</span>
-              <span class="tech-badge">jQuery</span>
-            </div>
-          </div>
-          <div style="height: 1px; background: var(--border);" aria-hidden="true"></div>
-          <div class="reveal">
-            <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-tertiary); margin-bottom: 12px;">Performance &amp; Quality</div>
-            <div class="tech-stack-grid">
+              <span class="tech-badge">Transients API</span>
               <span class="tech-badge">Core Web Vitals</span>
-              <span class="tech-badge">Technical SEO</span>
-              <span class="tech-badge">Website Security</span>
-              <span class="tech-badge">Git / GitHub</span>
-              <span class="tech-badge">Site Migration</span>
-              <span class="tech-badge">Maintenance</span>
+              <span class="tech-badge">Schema Markup</span>
+            </div>
+            <a
+              href="projects/tecocraft-performance.html"
+              class="project-card-link"
+              >Read the Tecocraft Performance case study</a
+            >
+          </article>
+
+          <div class="grid-3">
+            <article class="project-card glass-panel">
+              <div class="project-card-body">
+                <div class="project-card-category">
+                  WooCommerce · Narola Infotech
+                </div>
+                <h3 class="project-card-title">Ikozy WooCommerce</h3>
+                <p class="project-card-desc">
+                  Full ecommerce store with custom template overrides for
+                  product listing, single product, cart and checkout pages, plus
+                  a customised one-page checkout.
+                </p>
+                <div class="project-card-tags">
+                  <span class="tech-badge">WooCommerce</span
+                  ><span class="tech-badge">Elementor Pro</span
+                  ><span class="tech-badge">PHP</span>
+                </div>
+                <div class="project-card-footer">
+                  <span class="project-card-company">Narola Infotech</span>
+                  <a
+                    href="projects/ikozy-woocommerce.html"
+                    class="project-card-link"
+                    >Read Ikozy case study</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card glass-panel">
+              <div class="project-card-body">
+                <div class="project-card-category">Migration · Triospire</div>
+                <h3 class="project-card-title">Repair Blogs</h3>
+                <p class="project-card-desc">
+                  Static HTML site rebuilt as a managed WordPress platform with
+                  custom post types, ACF fields, custom redirection logic and
+                  on-page SEO.
+                </p>
+                <div class="project-card-tags">
+                  <span class="tech-badge">WordPress</span
+                  ><span class="tech-badge">ACF</span
+                  ><span class="tech-badge">CPT</span>
+                </div>
+                <div class="project-card-footer">
+                  <span class="project-card-company">Triospire</span>
+                  <a href="projects/repair-blogs.html" class="project-card-link"
+                    >Read Repair Blogs case study</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card glass-panel">
+              <div class="project-card-body">
+                <div class="project-card-category">WooCommerce · Triospire</div>
+                <h3 class="project-card-title">Comestey</h3>
+                <p class="project-card-desc">
+                  WooCommerce store built with Gutenberg blocks for dynamic
+                  product layouts and custom PHP styling without a third-party
+                  page builder.
+                </p>
+                <div class="project-card-tags">
+                  <span class="tech-badge">WooCommerce</span
+                  ><span class="tech-badge">Gutenberg</span
+                  ><span class="tech-badge">PHP</span>
+                </div>
+                <div class="project-card-footer">
+                  <span class="project-card-company">Triospire</span>
+                  <a href="projects/comestey.html" class="project-card-link"
+                    >Read Comestey case study</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE TIMELINE -->
+      <section class="section" aria-labelledby="experience-heading">
+        <div class="container">
+          <div class="section-label">Experience</div>
+          <h2
+            class="section-heading"
+            id="experience-heading"
+            style="margin-bottom: var(--space-8)"
+          >
+            Professional experience
+          </h2>
+
+          <div class="timeline">
+            <article class="timeline-item glass-panel">
+              <div class="timeline-header">
+                <h3 class="timeline-role">
+                  Senior WordPress Developer
+                  <span class="timeline-company"
+                    >@ WebbyGenius Infotech Pvt. Ltd.</span
+                  >
+                </h3>
+                <span class="timeline-period">Dec 2025 to Feb 2026</span>
+              </div>
+              <p>
+                Worked on backend systems and API development for internal and
+                client applications.
+              </p>
+              <ul class="timeline-achievements">
+                <li>
+                  Built REST APIs for a day-to-day account management system
+                  handling users, roles, permissions and financial records.
+                </li>
+                <li>
+                  Developed a payslip maker API covering salary slip generation,
+                  management and delivery.
+                </li>
+                <li>
+                  Added authentication and input validation so frontend teams
+                  and third-party tools could integrate reliably.
+                </li>
+              </ul>
+            </article>
+
+            <article class="timeline-item glass-panel">
+              <div class="timeline-header">
+                <h3 class="timeline-role">
+                  Software Engineer
+                  <span class="timeline-company"
+                    >@ Narola Infotech Pvt. Ltd.</span
+                  >
+                </h3>
+                <span class="timeline-period">Jan 2025 to Nov 2025</span>
+              </div>
+              <p>
+                Developed and maintained WordPress and WooCommerce websites for
+                client projects from design references.
+              </p>
+              <ul class="timeline-achievements">
+                <li>
+                  Built the Ikozy WooCommerce store with custom template
+                  overrides and a customised one-page checkout.
+                </li>
+                <li>
+                  Delivered the Holger corporate website in Elementor Pro, Big
+                  Gazga in Divi Builder and the Gemini business site in
+                  Elementor.
+                </li>
+                <li>
+                  Optimised WooCommerce script and product image loading to
+                  maintain Core Web Vitals.
+                </li>
+              </ul>
+            </article>
+
+            <article class="timeline-item glass-panel">
+              <div class="timeline-header">
+                <h3 class="timeline-role">
+                  Senior WordPress Developer (CMS)
+                  <span class="timeline-company"
+                    >@ Triospire Web Solution Pvt. Ltd.</span
+                  >
+                </h3>
+                <span class="timeline-period">May 2023 to Jul 2024</span>
+              </div>
+              <p>
+                Led client website builds using Elementor, Divi Builder and
+                Bedrock, and managed uptime, SEO and performance.
+              </p>
+              <ul class="timeline-achievements">
+                <li>
+                  Converted static HTML sites to WordPress for Repair Blogs,
+                  ThaiMassage and SmartSolar using ACF and custom post types.
+                </li>
+                <li>
+                  Built Comestey in WooCommerce with Gutenberg blocks and SLED
+                  for MTheory Group in Elementor.
+                </li>
+              </ul>
+            </article>
+
+            <article class="timeline-item glass-panel">
+              <div class="timeline-header">
+                <h3 class="timeline-role">
+                  WordPress Developer (CMS)
+                  <span class="timeline-company"
+                    >@ Tecocraft Infusion Pvt. Ltd.</span
+                  >
+                </h3>
+                <span class="timeline-period">Feb 2021 to Feb 2023</span>
+              </div>
+              <p>
+                Developed custom WordPress themes and plugins using ACF and
+                custom post types, and migrated static HTML sites including
+                BreathingCenter and Farming.
+              </p>
+              <ul class="timeline-achievements">
+                <li>
+                  Audited older client sites for plugin bloat, slow queries,
+                  caching and technical SEO, achieving 2.4 times faster page
+                  speed, a 45 percent SEO score increase and a 27 percent
+                  engagement increase across audited sites.
+                </li>
+              </ul>
+            </article>
+
+            <article class="timeline-item glass-panel">
+              <div class="timeline-header">
+                <h3 class="timeline-role">
+                  Web Designer Intern
+                  <span class="timeline-company">@ Sun Software</span>
+                </h3>
+                <span class="timeline-period">Jan 2020 to Apr 2020</span>
+              </div>
+              <p>
+                Developed modules for the Parent Interaction System and Bio Bags
+                Store using OpenCart, HTML, CSS and MariaDB.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ SECTION (AEO) -->
+      <section class="section" aria-labelledby="faq-heading">
+        <div class="container">
+          <div class="section-label">FAQ</div>
+          <h2
+            class="section-heading"
+            id="faq-heading"
+            style="margin-bottom: var(--space-6)"
+          >
+            Frequently asked questions
+          </h2>
+          <div class="faq-list">
+            <article class="faq-item glass-panel">
+              <h3 class="faq-question">Who is Saloni S. Rajput?</h3>
+              <p class="faq-answer">
+                Saloni S. Rajput is a Senior WordPress Developer based in Surat,
+                Gujarat, India, with over four years of professional experience
+                building custom themes, plugins, WooCommerce stores and REST
+                APIs.
+              </p>
+            </article>
+            <article class="faq-item glass-panel">
+              <h3 class="faq-question">
+                What WordPress and WooCommerce services does she offer?
+              </h3>
+              <p class="faq-answer">
+                She builds custom WordPress themes and plugins using ACF and
+                custom post types, customises WooCommerce product templates and
+                checkout flows, migrates static HTML sites to WordPress,
+                develops authenticated REST APIs, and audits existing sites for
+                Core Web Vitals and technical SEO.
+              </p>
+            </article>
+            <article class="faq-item glass-panel">
+              <h3 class="faq-question">
+                How many years of WordPress experience does Saloni have?
+              </h3>
+              <p class="faq-answer">
+                She has over four years of professional WordPress development
+                experience across WebbyGenius Infotech, Narola Infotech,
+                Triospire Web Solution and Tecocraft Infusion, following an
+                internship at Sun Software in 2020.
+              </p>
+            </article>
+            <article class="faq-item glass-panel">
+              <h3 class="faq-question">
+                Does she have experience with the WordPress REST API and backend
+                systems?
+              </h3>
+              <p class="faq-answer">
+                Yes. Most recently at WebbyGenius Infotech (Dec 2025 to Feb
+                2026), she built REST APIs with authentication and input
+                validation for an account management system and a payslip maker
+                application.
+              </p>
+            </article>
+            <article class="faq-item glass-panel">
+              <h3 class="faq-question">
+                What certifications does Saloni hold?
+              </h3>
+              <p class="faq-answer">
+                She holds seven WordPress VIP Learn certificates earned in 2026:
+                Enterprise WordPress Performance, Enterprise WordPress Security,
+                WordPress VIP Architecture and Tooling, Advanced WordPress
+                Debugging, Mastering the WordPress REST API, Enterprise Block
+                Editor, and Development, Build, Test, and Deployment.
+              </p>
+            </article>
+            <article class="faq-item glass-panel">
+              <h3 class="faq-question">
+                Is she available for freelance WordPress projects or full-time
+                roles?
+              </h3>
+              <p class="faq-answer">
+                Yes. She works independently, leads modules and communicates
+                directly with international clients, and is open to both
+                full-time engineering roles and freelance WordPress or
+                WooCommerce projects.
+              </p>
+            </article>
+            <article class="faq-item glass-panel">
+              <h3 class="faq-question">
+                How can recruiters or clients contact Saloni?
+              </h3>
+              <p class="faq-answer">
+                You can email
+                <a
+                  href="mailto:Rsaloni223@gmail.com"
+                  style="color: var(--accent); text-decoration: underline"
+                  >Rsaloni223@gmail.com</a
+                >, call
+                <a
+                  href="tel:+917048731433"
+                  style="color: var(--accent); text-decoration: underline"
+                  >+91 70487 31433</a
+                >, connect on LinkedIn, or download her PDF resume directly from
+                this website.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section-sm" aria-label="Call to action">
+        <div class="container">
+          <div class="cta-section glass-panel">
+            <h2 class="cta-title">Looking for a Senior WordPress Developer?</h2>
+            <p class="cta-subtitle">
+              Get in touch to discuss custom WordPress builds, WooCommerce
+              customisation, REST API integration or performance audits.
+            </p>
+            <div class="cta-actions">
+              <a href="contact.html" class="btn btn-primary">Contact me</a>
+              <a
+                href="assets/saloni-rajput-wordpress-developer-resume.pdf"
+                class="btn btn-secondary"
+                download
+                >Download Resume (PDF)</a
+              >
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- ==================================================================
-         CTA
-         ================================================================== -->
-    <section class="section" aria-label="Call to action">
+    <footer class="site-footer" role="contentinfo">
       <div class="container">
-        <div class="cta-section reveal">
-          <h2 class="cta-title">Ready to build something great?</h2>
-          <p class="cta-subtitle">Whether you need a high-performance WordPress build, a WooCommerce store, or technical rescue work — let's talk about what I can do for your project.</p>
-          <div class="cta-actions">
-            <a href="contact.html" class="btn btn-cta-primary btn-primary">
-              Get in Touch
-              <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
-            </a>
-            <a href="projects.html" class="btn btn-cta-secondary">View All Projects</a>
+        <div class="footer-inner">
+          <div>
+            <div class="footer-brand-name">Saloni<span>.dev</span></div>
+            <p class="footer-tagline">
+              Senior WordPress Developer in Surat, Gujarat, India. Building
+              maintainable WordPress, WooCommerce and REST API solutions.
+            </p>
+            <div class="footer-social-links">
+              <a
+                href="https://github.com/SaloniRajput30"
+                class="footer-social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  /></svg
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/saloni-rajput-704a52219"
+                class="footer-social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  /></svg
+              ></a>
+              <a
+                href="mailto:Rsaloni223@gmail.com"
+                class="footer-social-link"
+                aria-label="Email"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
+                  />
+                  <path
+                    d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
+                  /></svg
+              ></a>
+            </div>
           </div>
+          <div>
+            <div class="footer-col-title">Navigation</div>
+            <div class="footer-links">
+              <a href="about.html" class="footer-link">About</a>
+              <a href="projects.html" class="footer-link">Projects</a>
+              <a href="contact.html" class="footer-link">Contact</a>
+              <a
+                href="assets/saloni-rajput-wordpress-developer-resume.pdf"
+                class="footer-link"
+                download
+                >Download Resume</a
+              >
+            </div>
+          </div>
+          <div>
+            <div class="footer-col-title">Case Studies</div>
+            <div class="footer-links">
+              <a href="projects/tecocraft-performance.html" class="footer-link"
+                >Tecocraft Performance</a
+              >
+              <a href="projects/ikozy-woocommerce.html" class="footer-link"
+                >Ikozy WooCommerce</a
+              >
+              <a href="projects/holger.html" class="footer-link"
+                >Holger Corporate</a
+              >
+              <a href="projects/comestey.html" class="footer-link">Comestey</a>
+              <a href="projects/smartsolar.html" class="footer-link"
+                >SmartSolar</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; <span data-year>2026</span> Saloni S. Rajput. All rights
+            reserved.
+          </p>
+          <p>Rsaloni223@gmail.com | +91 70487 31433 | Surat, Gujarat, India</p>
         </div>
       </div>
-    </section>
+    </footer>
 
-  </main>
-
-  <!-- ====================================================================
-       SITE FOOTER
-       ==================================================================== -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <div class="footer-inner">
-        <div>
-          <div class="footer-brand-name">Saloni<span>.dev</span></div>
-          <p class="footer-tagline">Senior WordPress Developer building fast, scalable and maintainable web experiences.</p>
-          <div class="footer-social-links">
-            <a href="https://github.com/SaloniRajput30" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-            </a>
-            <a href="https://www.linkedin.com/in/saloni-rajput-704a52219/" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            </a>
-            <a href="mailto:rsaloni223@gmail.com" class="footer-social-link" aria-label="Email">
-              <svg viewBox="0 0 24 24"><path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"/><path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <div>
-          <div class="footer-col-title">Navigation</div>
-          <div class="footer-links">
-            <a href="/"             class="footer-link">Home</a>
-            <a href="about.html"    class="footer-link">About</a>
-            <a href="projects.html" class="footer-link">Projects</a>
-            <a href="contact.html"  class="footer-link">Contact</a>
-          </div>
-        </div>
-
-        <div>
-          <div class="footer-col-title">Projects</div>
-          <div class="footer-links">
-            <a href="projects/tecocraft-performance.html" class="footer-link">Tecocraft Performance</a>
-            <a href="projects/ikozy-woocommerce.html"     class="footer-link">Ikozy WooCommerce</a>
-            <a href="projects/holger.html"                class="footer-link">Holger Corporate</a>
-            <a href="projects/comestey.html"              class="footer-link">Comestey</a>
-            <a href="projects/smartsolar.html"            class="footer-link">SmartSolar</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p class="footer-copy">&copy; <span data-year>2026</span> <span>Saloni Rajput</span>. All rights reserved.</p>
-        <p class="footer-copy">rsaloni223@gmail.com</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="assets/js/navigation.js"></script>
-  <script src="assets/js/animations.js"></script>
-  <script src="assets/js/main.js"></script>
-
-  <style>
-    @media (max-width: 768px) {
-      .results-grid { grid-template-columns: 1fr !important; }
-    }
-  </style>
-</body>
+    <script src="assets/js/app.js" defer></script>
+  </body>
 </html>

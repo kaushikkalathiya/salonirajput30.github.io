@@ -1,0 +1,29 @@
+# Saloni S. Rajput
+
+> Senior WordPress Developer based in Surat, Gujarat, India, with over four years of professional experience building custom WordPress themes, plugins, WooCommerce stores and authenticated REST APIs.
+
+## Core Pages
+
+- [Home](https://salonirajput30.github.io/): Overview, quick facts, core capabilities, career timeline and FAQ.
+- [About](https://salonirajput30.github.io/about.html): Full career timeline, technical skills, MCA and BCA education, and seven WordPress VIP Learn certificates.
+- [Projects](https://salonirajput30.github.io/projects.html): Complete list of WordPress, WooCommerce, REST API and migration projects.
+- [Contact](https://salonirajput30.github.io/contact.html): Direct email, phone, LinkedIn and GitHub contact details.
+- [Resume (PDF)](https://salonirajput30.github.io/assets/saloni-rajput-wordpress-developer-resume.pdf): Printable PDF copy of Saloni S. Rajput's resume.
+- [Full Profile (llms-full.txt)](https://salonirajput30.github.io/llms-full.txt): Complete plain-text profile for single-request AI reading.
+
+## Case Studies
+
+- [Tecocraft Performance & SEO Audit](https://salonirajput30.github.io/projects/tecocraft-performance.html): Technical audit and refactor of older client WordPress sites at Tecocraft Infusion Pvt. Ltd.
+- [Ikozy WooCommerce](https://salonirajput30.github.io/projects/ikozy-woocommerce.html): WooCommerce store with custom template overrides, product grids and one-page checkout at Narola Infotech.
+- [Holger Corporate](https://salonirajput30.github.io/projects/holger.html): Corporate WordPress website built in Elementor Pro to a responsive design specification.
+- [Gemini Business](https://salonirajput30.github.io/projects/gemini-business.html): Elementor business website with animations and on-page SEO improvements.
+- [Repair Blogs](https://salonirajput30.github.io/projects/repair-blogs.html): Static HTML to WordPress migration with ACF, custom post types and custom redirection logic.
+- [Comestey](https://salonirajput30.github.io/projects/comestey.html): WooCommerce store built with Gutenberg blocks and custom PHP styling.
+- [SmartSolar](https://salonirajput30.github.io/projects/smartsolar.html): Static HTML to WordPress migration using ACF and custom post types.
+- [SLED (MTheory Group)](https://salonirajput30.github.io/projects/sled-mtheory.html): Elementor website with responsive layouts and smooth page transitions.
+- [BreathingCenter](https://salonirajput30.github.io/projects/breathingcenter.html): Static HTML to responsive WordPress migration with ACF and custom post types at Tecocraft.
+
+## External Profiles
+
+- [GitHub](https://github.com/SaloniRajput30): Code repositories and portfolio source.
+- [LinkedIn](https://www.linkedin.com/in/saloni-rajput-704a52219): Professional profile and work history.
